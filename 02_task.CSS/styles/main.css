@@ -1,0 +1,99 @@
+body {
+    background-color: #951311;
+    font-size: 18px;
+}
+
+
+/* Header */
+
+.head-img {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.images-bar {
+    background-color: black;
+    margin-left: 20px;
+}
+
+.nav-img-wrapper {
+    display: inline-block;
+    width: 240px;
+    height: 210px;
+    margin: 20px 40px 0px;
+    text-align: center
+}
+
+.nav-img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+
+.main-text {
+    color: white;
+    float: left;
+    padding-top: 20px;
+}
+
+main {
+    width: 57%;
+    display: inline-block;
+}
+
+/* Aside left */
+
+.left-bar {
+    width: 21%;
+    float: left;
+    background-color: #7d0909;
+    margin: 5px 5px 30px 20px;
+    height: 350px;
+}
+
+.left-bar-item {
+    color: #e85b18;
+    display: block;
+    padding-bottom: 5px;
+}
+
+/* Aside right */
+
+.right-bar {
+    float: right;
+    width: 17%;
+    height: 350px;
+    background-color: #e3dddd;
+    margin: 5px 5px 30px 5px;
+}
+
+.right-bar-title {
+    text-align: center;
+    background-color: #bdbdbd;
+    margin-bottom: 10px;
+}
+
+.right-bar hr {
+    width: 50%;
+    margin: auto;
+}
+
+.right-bar-text {
+    margin: 20px 0px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #e95b11;
+    margin: 130px 5px 5px 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}

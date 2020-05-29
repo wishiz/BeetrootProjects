@@ -1,0 +1,135 @@
+body {
+    margin: 0px;
+    display: inline;
+    font-family: 'Lora', serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+    font-style: initial;
+}
+
+a:hover{
+    color: #7d5a5a;
+}
+
+/* Aside panel */
+aside{
+    background-color: #7d5a5a;
+    width: 30%;
+    display: inline-block;
+    padding-bottom: 200px;
+}
+
+
+.left-bar-major{
+    text-align: left;
+    padding: 15% 0px 0px 20%;
+    font-size: 80%;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.left-bar-minor{
+    text-align: left;
+    padding-left: 20%;
+    font-size: 57%;
+    padding-bottom: 10%;
+    width: 70%;
+}
+
+.left-bar-hr{
+    width: 80%;
+    margin: 1% 0px 1% auto;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 20%;
+}
+
+/* Main part */
+main {
+    width: 64%;
+    float: right;
+    padding: 3%;
+}
+
+.academy-name{
+    font-style: italic;
+    margin: 1% 0px;
+}
+
+.department-name{
+    margin: 2% 0px 0px 0px;
+}
+
+.company-name{
+    margin: 0px;
+    font-style: italic;
+}
+
+.work-dates{
+    float: right;
+    color: #706c61;
+}
+
+.education-info{
+    margin-bottom: 2%;
+}
+
+.jobs , .education-info , .skills-list{
+    font-size: 70%;
+}
+
+.name{
+    font-size: 150%;
+}
+
+.section-name{
+    margin: 0px;
+    color: #706c61;
+}
+
+.skills-list{
+    padding-left: 4%;
+}
+
+.study-dates{
+    color: #706c61;
+    margin-top: 1%;
+}
+
+.position-name{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.presentations-list{
+    padding-left: 4%;
+}
+
+.work-responsibilities{
+    margin-top: 1%;
+    padding-left: 4%;
+}
+
+/* Footer */
+.contact-me{
+    padding: 15% 0px 0px 20%;
+}
+
+.contact-me-item{
+    color: black;
+    font-size: 150%;
+    padding-right: 15%;
+}
+
+.contact-me-item:hover{
+    color: white ;
+}
