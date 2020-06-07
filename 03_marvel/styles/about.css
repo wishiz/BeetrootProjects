@@ -1,0 +1,11 @@
+.about__content-container {
+    padding: 73px 16px 58px;
+    min-height: 1414px
+}
+
+.about__post-title-text {
+    font-family: 'Muli';
+    max-width: 945px;
+    text-align: center;
+    margin: 0 auto;
+}

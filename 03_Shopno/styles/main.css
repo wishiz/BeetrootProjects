@@ -1,3 +1,7 @@
+.body {
+    overflow-x: hidden;
+}
+
 .content-container {
     max-width: 1188px;
     margin: 0 auto;

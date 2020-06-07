@@ -1,0 +1,145 @@
+.header {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    background-color: #2a2a2a;
+    color: white;
+    top: 0;
+	left: 0;
+}
+
+.header__content-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 190px;
+    min-width: 160px;
+}
+
+.header__navbar-item {
+    margin-left: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar__item {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 48px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar__item:first-child {
+    margin-left: 0;
+}
+
+.navbar__item:hover {
+    color: #ffe400
+}
+
+.navbar__item--active {
+    color: #ffe400
+}
+
+/* Hamburger btn */
+
+.menu-btn {
+	background-color: transparent;
+	position: relative;
+	display: block;
+	outline: none;
+	padding: 0;
+	cursor: pointer;
+	border: 0;
+	height: 24px;
+	width: 24px;
+}
+
+.menu-btn p {
+	background-color: #ffffff;
+	transition: 0.25s ease;
+	transform: rotate(0deg);
+	position: absolute;
+	display: block;
+	opacity: 1;
+	height: 3px;
+	width: 100%;
+}
+
+.menu-btn p:nth-of-type(1) {
+	left: 0;
+	top: 0;
+}
+
+.menu-btn p:nth-of-type(2) {
+	right: 0;
+	top: 10px;
+}
+
+.menu-btn p:nth-of-type(3) {
+	left: 0;
+	top: 20px;
+}
+
+.menu-btn:hover p {
+	background-color: #ffe400;
+}
+
+.menu-btn:hover p:nth-of-type(1) {
+	transform: rotate(135deg);
+	top: 10px;
+}
+
+.menu-btn:hover p:nth-of-type(2) {
+	opacity: 0;
+	right: 26px;
+}
+
+.menu-btn:hover p:nth-of-type(3) {
+	transform: rotate(-135deg);
+	top: 10px;
+}
+
+/* hamburger button */
+
+.header__menu-btn {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.header__menu-btn {
+		display: block;
+	}
+
+	.navbar {
+		display: none;
+	}
+}
+
+@media (max-width: 1366px) {
+	.name {
+		width: 25%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.name {
+		width: 50%;
+	}
+}
+
+@media (max-width: 768px) {
+	.name {
+		width: 100%;
+	}
+}
