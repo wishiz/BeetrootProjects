@@ -70,11 +70,10 @@
 }
 
 .contact-us__input-block input:focus:invalid {
-    border-color: red;
+    border-color: #FFE400;
 }
 
 .contact-us__input-block input:focus {
-    border-color: #FFE400;
     background-color: #E6E6E6;
 }
 
@@ -116,7 +115,5 @@
 @media (max-width: 575px) {
     .contact-us__inline {
         display: block;
-        max-width: 560px;
-        width: 100%;
     }
 }
