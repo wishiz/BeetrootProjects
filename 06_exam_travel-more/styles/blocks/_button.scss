@@ -37,6 +37,7 @@
 
 		&:hover {
 			background-color: $blue-dark;
+			font-size: 120%;
 		}
 	}
 }
@@ -65,6 +66,11 @@ button[type=submit] {
 	margin: 0 auto;
 	position: relative;
 	font-weight: 300;
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
 
 	&:after {
 		content: "";

@@ -12,15 +12,11 @@
         @include centerer;
     }
 
-    &__title {
-        text-transform: uppercase;
+    &__heading {
         font-size: 48px;
-        color: $white;
-        line-height: 1;
     }
 
     &__slogan {
-        font-weight: 300;
         margin-bottom: 48px;
     }
 
@@ -32,10 +28,13 @@
     input[type=text] {
         padding: 20px 117px;
         border: none;
-        letter-spacing: 0.2em;
-        line-height: 1.45;
         vertical-align: top;
         width: 650px;
+
+        &::placeholder {
+            letter-spacing: 0.2em;
+            line-height: 1.45;
+        }
     } 
     
 

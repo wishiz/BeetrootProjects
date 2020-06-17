@@ -1,3 +1,9 @@
+.heading {
+	text-transform: uppercase;
+    color: $white;
+    line-height: 1;
+}
+
 .title {
     font-size: 36px;
 	line-height: 48px;
@@ -5,5 +11,9 @@
 }
 
 .main-text {
-		font-size: 16px;
+	font-size: 16px;
+}
+
+.slogan {
+	font-weight: 300;
 }
