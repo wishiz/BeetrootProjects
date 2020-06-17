@@ -45,7 +45,7 @@
     @media screen and (max-width: $breakpoint-down-sm){
         input[type=text] {
             width: 550px;
-            padding-left: 50px;
+            padding-left: 56px;
         }
     }
 
@@ -55,6 +55,10 @@
             width: 300px;
             padding: 10px 10px;
             font-size: 12px;
+
+            &:focus {
+                padding: 10px;
+            }
         }
 
         button[type=submit] {
