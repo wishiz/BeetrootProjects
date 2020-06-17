@@ -35,6 +35,10 @@
             letter-spacing: 0.2em;
             line-height: 1.45;
         }
+
+        &:focus {
+            padding: 20px 56px;
+        }
     } 
     
 

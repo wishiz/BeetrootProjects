@@ -300,7 +300,6 @@ textarea {
 }
 .button--size-md {
   min-height: 60px;
-  font-size: 12px;
   width: 150px;
 }
 .button--size-lg {
@@ -314,7 +313,7 @@ textarea {
 }
 .button--blue:hover {
   background-color: #0779e4;
-  font-size: 120%;
+  font-size: 115%;
 }
 
 button[type=submit] {
@@ -459,6 +458,9 @@ button[type=submit] svg {
   letter-spacing: 0.2em;
   line-height: 1.45;
 }
+.home input[type=text]:focus {
+  padding: 20px 56px;
+}
 @media screen and (max-width: 767.98px) {
   .home input[type=text] {
     width: 550px;
@@ -578,6 +580,9 @@ button[type=submit] svg {
 @media screen and (max-width: 767.98px) {
   .choose-us__images {
     display: none;
+  }
+  .choose-us__text {
+    margin: 0 auto;
   }
 }
 
