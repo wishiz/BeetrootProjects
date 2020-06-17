@@ -1,0 +1,68 @@
+.home {
+    background-image: url(../assets/images/home_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        min-height: 90vh;
+        scroll-behavior: smooth;
+    }
+
+    &__centered-content {
+        @include centerer;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 48px;
+        color: $white;
+        line-height: 1;
+    }
+
+    &__slogan {
+        font-weight: 300;
+        margin-bottom: 48px;
+    }
+
+    &__search {
+        position: relative;
+        margin-bottom: 115px;
+    }
+
+    input[type=text] {
+        padding: 20px 117px;
+        border: none;
+        letter-spacing: 0.2em;
+        line-height: 1.45;
+        vertical-align: top;
+        width: 650px;
+    } 
+    
+
+    @media screen and (max-width: $breakpoint-down-sm){
+        input[type=text] {
+            width: 550px;
+            padding-left: 50px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-down-xs){
+
+        input[type=text] {
+            width: 300px;
+            padding: 10px 10px;
+            font-size: 12px;
+        }
+
+        button[type=submit] {
+            width: 37px;
+            min-height: 37px;
+
+            span {
+                display: none;
+            }
+    }
+
+    }
+
+}

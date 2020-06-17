@@ -1,0 +1,50 @@
+.review {
+    background-image: url(../assets/images/review_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(35, 35, 35, 0.9);
+    background-blend-mode: darken;
+    background-position: center;
+
+    &__container {
+        min-height: 731px;
+        padding-top: 112px;
+    }
+
+    &__block {
+        margin-top: 91px;
+        display: flex;
+        flex-direction: row;
+        background-color: $grey-dark;
+        height: 284px;
+
+        &-img {
+            max-width: 444px;
+
+            img {
+                height: 100%;  
+            }
+        }
+
+        &-text {
+            max-width: 665px;
+            padding: 44px 64px 43px 60px;
+            text-align: left;
+
+            h2 {
+                font-size: 20px;
+                text-transform: uppercase; 
+                margin-bottom: 15px;           
+            }
+
+            p {
+                line-height: 26px;
+
+                i {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    
+}

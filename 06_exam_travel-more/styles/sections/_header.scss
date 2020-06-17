@@ -1,0 +1,55 @@
+.header {
+    background-color: #5474FD;
+
+    &__menu-btn {
+        display: none;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        text-transform: uppercase;
+    }
+
+    &__logo {
+        font-weight: 700;
+    }
+
+    &__navbar-item {
+        // margin-left: 300px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        .navbar__item {
+            margin-left: 32px;
+            color: $white;
+            text-decoration: none;
+            transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .navbar__item:hover {
+            background-color: red;
+        }
+    }
+
+
+    &__menu-btn {
+        display: none;
+    }
+    
+    @media (max-width: $breakpoint-down-md) {
+        .header__menu-btn {
+            display: block;
+        }
+    
+        .navbar {
+            display: none;
+        }
+    }
+
+
+}
