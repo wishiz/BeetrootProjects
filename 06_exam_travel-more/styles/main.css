@@ -464,7 +464,7 @@ button[type=submit] svg {
 @media screen and (max-width: 767.98px) {
   .home input[type=text] {
     width: 550px;
-    padding-left: 50px;
+    padding-left: 56px;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -472,6 +472,9 @@ button[type=submit] svg {
     width: 300px;
     padding: 10px 10px;
     font-size: 12px;
+  }
+  .home input[type=text]:focus {
+    padding: 10px;
   }
   .home button[type=submit] {
     width: 37px;
