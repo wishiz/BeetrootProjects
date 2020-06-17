@@ -32,7 +32,6 @@
         left: 16%;
         min-height: 95px;
         max-width: 777px;
-        z-index: 0;
     }
 
     @media screen and (max-width: $breakpoint-down-sm){
@@ -46,9 +45,18 @@
             }
             
             h2 {
-                font-size: 30px;
+                font-size: 20px;
                 font-family: 'Aleo', sans-serif;
             }
+        }
+
+        &__shape-img {
+            position: absolute;
+            top: 10%;
+            left: 16%;
+            min-height: auto;
+            min-width: 100%;
+            z-index: 0;
         }
     }
 }
