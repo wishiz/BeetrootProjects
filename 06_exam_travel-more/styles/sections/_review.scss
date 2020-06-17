@@ -9,6 +9,7 @@
     &__container {
         min-height: 731px;
         padding-top: 112px;
+        padding-bottom: 56px;
     }
 
     &__block {
@@ -16,10 +17,11 @@
         display: flex;
         flex-direction: row;
         background-color: $grey-dark;
-        height: 284px;
+        min-height: 284px;
 
         &-img {
             max-width: 444px;
+            max-height: 284px;
 
             img {
                 height: 100%;  
@@ -42,6 +44,36 @@
 
                 i {
                     color: $blue;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-down-md){
+        &__block {
+            margin: 91px auto 0;
+            max-width: 560px;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+    
+            &-img {
+                margin-top: 50px;
+                height: 284px;    
+                img {
+                    object-fit: initial;
+                }
+            }
+    
+            &-text {
+
+    
+                h2 {
+           
+                }
+    
+                p {
+
                 }
             }
         }

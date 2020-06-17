@@ -24,15 +24,18 @@
             line-height: 48px;
             font-family: 'Aleo', sans-serif;
         }
+
+        &:hover {
+            h2 {
+                font-weight: 700;
+            }
+        }
     }
 
     &__shape-img {
         position: absolute;
         top: 10%;
-        left: 16%;
         min-height: 95px;
-        max-width: 777px;
-        z-index: 0;
     }
 
     @media screen and (max-width: $breakpoint-down-sm){
@@ -41,14 +44,16 @@
                 height: 78px;
                 width: 78px;
                 padding: 14px;
-                z-index: 10000;
-                background-color: $grey-dark;
             }
             
             h2 {
-                font-size: 30px;
-                font-family: 'Aleo', sans-serif;
+                font-size: 20px;
+                line-height: 1.2;
             }
+        }
+
+        &__shape-img {
+            display: none;
         }
     }
 }
