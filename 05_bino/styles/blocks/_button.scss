@@ -1,0 +1,55 @@
+@import "./../base/_mixins";
+
+.button {
+	@include center;
+	transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 1px;
+	color: $white;
+
+	&--fluid {
+		width: 100%;
+	}
+
+	&--min-content {
+		width: min-content;
+	}
+
+	&--size-sm {
+		min-height: 46px;
+		font-size: 14px;
+		width: 145px;
+	}
+
+	&--size-md {
+		min-height: 44px;
+		font-size: 12px;
+		width: 157px;
+	}
+
+	&--size-lg {
+		min-height: 56px;
+		width: 225px;
+		font-size: 14px;
+	}
+
+	&--transparent {
+		border-width: 1px;
+		border-style: solid;
+
+		&:hover {
+			background-color:rgba(0, 0, 0, 0.5); 
+		}
+	}
+
+	&--red {
+		background-color: $red;
+		color: $white;
+
+		&:hover {
+			background-color:#d63324;  
+		}
+		}
+}

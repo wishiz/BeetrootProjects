@@ -1,0 +1,43 @@
+.divider {
+    margin-bottom: 40px;
+    max-width: 195px;
+    position: relative;
+    width: 100%;
+
+    &-dot {
+        width: 35px;
+        padding: 0 14px;
+        margin: 0 auto;
+        height: 7px;
+
+        div {
+            border-radius: 50%;
+            height: 7px;
+            width: 7px;
+            background-color: $red;
+            z-index: 2;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                background-color: $white;			
+                display: block;
+                content: "";
+                height: 1px;
+                width: 80px;
+            }
+
+            &:after {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                background-color: $white;			
+                display: block;
+                content: "";
+                height: 1px;
+                width: 80px;
+            }
+        }
+    }
+}
