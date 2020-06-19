@@ -284,7 +284,7 @@ textarea {
   justify-content: center;
   align-items: center;
   display: flex;
-  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, font-size 0.2s ease;
   white-space: nowrap;
   text-transform: uppercase;
   font-weight: 700;
@@ -310,10 +310,11 @@ textarea {
 .button--blue {
   background-color: #5474FD;
   color: #ffffff;
+  transition: background-color 0.5s ease, font-size 0.5s ease;
 }
 .button--blue:hover {
-  background-color: #0779e4;
-  font-size: 115%;
+  background-color: #435DCA;
+  font-size: 120%;
 }
 
 button[type=submit] {
@@ -610,9 +611,10 @@ button[type=submit] svg {
   font-size: 36px;
   line-height: 48px;
   font-family: "Aleo", sans-serif;
+  transition: font-size 0.5s ease;
 }
 .guidelines__item:hover h2 {
-  font-weight: 700;
+  font-size: 40px;
 }
 .guidelines__shape-img {
   position: absolute;
@@ -772,6 +774,7 @@ button[type=submit] svg {
   text-decoration: none;
   color: #ffffff;
   font-size: 17px;
+  transition: color 0.5s ease, font-size 0.5s ease;
 }
 .footer__icons a:hover {
   color: #5474FD;

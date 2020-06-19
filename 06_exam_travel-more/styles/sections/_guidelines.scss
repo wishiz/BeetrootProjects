@@ -23,11 +23,12 @@
             font-size: 36px;
             line-height: 48px;
             font-family: 'Aleo', sans-serif;
+            transition: font-size 0.5s ease;
         }
 
         &:hover {
             h2 {
-                font-weight: 700;
+                font-size: 40px;
             }
         }
     }
