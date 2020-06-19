@@ -13,7 +13,7 @@
 
 <body>
     <main>
-        <section class="home">
+        <section id="home" class="home">
             <div class="content-container home__container">
                 <header class="home__header">
                     <div class="home__header-logo">
@@ -22,11 +22,11 @@
 
                     <nav class="navbar home__header-navbar">
                         <a href="#home" class="navbar__item">Home</a>
-                        <a href="#about-us" class="navbar__item">About us</a>
+                        <a href="#features" class="navbar__item">About us</a>
+                        <a href="#our-history" class="navbar__item">History</a>
+                        <a href="#our-services" class="navbar__item">Services</a>
                         <a href="#portfolio" class="navbar__item">Portfolio</a>
-                        <a href="#pricing" class="navbar__item navbar__item--active">Pricing</a>
-                        <a href="#team" class="navbar__item">Team</a>
-                        <a href="#blog" class="navbar__item">Blog</a>
+                        <a href="#trial" class="navbar__item">Get started</a>
                         <a href="#contact" class="navbar__item">Contact</a>
                     </nav>
 
@@ -76,7 +76,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section id="features" class="features">
 
             <div class="content-container features__container">
                 <div class="features__list">
@@ -156,7 +156,7 @@
             </div>
         </section>
 
-        <section class="our-history">
+        <section id="our-history" class="our-history">
             <div class="content-container our-history__container">
                 <div class="our-history__img-wrapper">
                     <img src="./assets/images/features_monitor.svg" alt="our-history-img">
@@ -324,16 +324,76 @@
 
         <section id="case-study" class="study">
             <div class="content-container study__container">
+                <h2 class="title title--grey study__title">Case study</h2>
+                <p>A brief story about how this process works, keep an eye till the end.</p>
+                <div class="divider">
+                    <div class="divider-dot">
+                        <div class="divider-lines divider-lines--grey"></div>
+                    </div>
+                </div>
+
+                <div class="slider study__slider">
+                    <div class="slider__slide">
+
+                        <div class="slider__slide-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="21" height="34" viewBox="0 0 21 34">
+                                <image id="_3" data-name="3" width="21" height="34"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABHNCSVQICAgIfAhkiAAAA9lJREFUSEud1meoXVUQBeDvWWKP2HvvGhsWhFjR2DVGo2CPxKBi/ogQQkCIoII/FAXRHwoqNuwaKyqKXRQMxKixY4klJjY02J+sMOdx3sn1xueGy733lLVnz6y1ZgYGBwd11grYHIfiIGyKv/EHcm95fIkX8Qw+wZ9tjIEO6AD2xeHYBSvhh/r8jhWxJtaqTebhKbyCoejaoGtgP0zAFvgUb+BtLKxoEuU6teE+2Arz8RBexo+JuAEdhcNwBlbHk3gWn+E3/NU63nJYudJyII6t+7fj8TzfgO6J87EJZuFRfNMB6+Y+4OvhSJxUp7kRrwY0kV2CMZWfO7GoitMF6v5PDZLfU3AMPsTMgB6M6XgP1+GDZSH1uJ8aXIg9cE1AL8e2uA/3/8cIe+17HE7DgoA+gtkF+labGiOMeEecjP0D+lwV5t6q9gixhh7fCCdifEBDnQcQ0FT8/67wdzwmNpE+XKAhcgi+IdZOfv5lo1ApkX2Pr0oY61ekE5qcvlmgc0uKu2FsUet5fNEKfwOE9PGE15B3I5DtKqdjA3plRRXSP1HVzwMTsXXl+8EW6FE4vk4RtrxTIhmHE/J+QKOIqOl1RBHfYhUcgjNL+1e0qDYNUeA9JZZfSgCTU3ncFtB1cVm5z114rHbeBmfV9bsjvyL32XXcm/F+/KNcLQHEyWY02o/VTUJ2vaHyFJPJ9RwrxnIVLsBOeAkpbnK5a11PcDGVWQ1ofDMvHFHme0sZcQCyWTa4CElDft9RggnQOWXooWZkvrjtpwHIESLZcDaRbIxzK8cXI5KOO2XTj8pETsfnuBVz2n7aFDft47yK8vrKVzw2hYvpzCzQ5PjnMpEtcVMVbQlOt53EbaLf7RH5xrnCyUScql+Kn6pom9WxPy4m5LsnaPK1VykjPSfNLcadaJpII+Wvq/UkFeF36Jii9QTNxcgttEmOX2jJNvlMXmPgWQcgjS8Vj1SHVvf4uTEap1Z7jmGn/YYdV1cOE1FyvDMi4TBhScPrF2m6auSWqgYsTW9xseHoAgxojh7AFG2ZoOmU6f0BjltFEPl8V3JcFdk4QPGECCGb9o001hdSp9/sXWbza7XlHD3RBzDdIg6VorVb+FKUGkpLDQ2ZBXZvmUkYkdEnFpmRJ36bkWjY6lWo5oEULKCJOJEkylAuo0+UE9CY9FKrH2hMOGayQ+UsLEiUq1Ubf7pGoxGBRjGpdlwoOW2mvlT+3RpxMvGNCDQvpwNkaIt8myLFBjO4hfjDqt6Pp+2dMzbGqDMkpOJphnH8uFQmwZ6rX07zQiQ7FVOqKOmiAby20wyHgf8D9eJPTdKxV8sAAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+
+                        <h3 class="slider__slide-title">Accumulate creative ideas</h3>
+                        <div class="slider__slide-divider"></div>
+                        <p class="slider__slide-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            let. Lorem Ipsum has been the
+                            industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum
+                            has
+                            been the industry Printing and typelorem Ipsum has been the setting let.</p>
+                        <button class="button button--red button--size-sm slider__slide-btn">Read more</button>
+                        <div class="slider__dots">
+                            <button class="slider__dot"></button>
+                            <button class="slider__dot slider__dot--active"></button>
+                            <button class="slider__dot"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="study__img-wrapper">
+                    <img src="./assets/images/study_slide-img.svg" alt="case-study-img">
+                </div>
 
             </div>
         </section>
 
-        <section id="">
+        <section id="trial" class="trial">
+            <div class="content-container trial__container">
+                <h2 class="trial__offer">Let's get started now. It's <span>free</span>!</h2>
+                <p class="trial__desc">30 day free trial. Free plan allows up to 2 projects. Pay if you need more.
+                    Cancel anytime. No
+                    catches.</p>
+                <button class="button button--red button--size-lg trial__button">Start free trial</button>
+            </div>
 
         </section>
     </main>
 
-    <footer></footer>
+    <footer id="contact" class="footer">
+        <div class="content-container footer__container">
+            <a href="#home" class="scroll-up"><i class="fas fa-chevron-up"></i></a>
+            <div class="footer__icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+                <a href="https://rss.com/"><i class="fas fa-rss"></i></a>
+                <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.skype.com/en/"><i class="fab fa-skype"></i></a>
+                <a href="https://vimeo.com/"><i class="fab fa-vimeo-v"></i></a>
+                <a href="https://www.tumblr.com/"><i class="fab fa-tumblr"></i></a>
+            </div>
+            <h3 class="footer__rights">Kazi Erfan © All Rights Reserved </h3>
+        </div>
+    </footer>
 </body>
 
 </html>

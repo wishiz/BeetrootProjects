@@ -1,0 +1,33 @@
+.trial {
+    background-image: url(./../assets/images/trial_bg-img.svg);
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        min-height: 480px;
+        padding-top: 138px;
+        padding-bottom: 56px;
+        color: $white;
+    }
+
+    &__offer {
+        font-size: 36px;
+
+        span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+        margin-bottom: 78px;
+    }
+
+    &__button {
+        margin: 0 auto;
+
+    }
+}
