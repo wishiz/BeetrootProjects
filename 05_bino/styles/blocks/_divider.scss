@@ -9,8 +9,9 @@
         padding: 0 14px;
         margin: 0 auto;
         height: 7px;
+    }
 
-        div {
+    &-lines {
             border-radius: 50%;
             height: 7px;
             width: 7px;
@@ -21,7 +22,6 @@
                 position: absolute;
                 left: 0;
                 top: 50%;
-                background-color: $white;			
                 display: block;
                 content: "";
                 height: 1px;
@@ -32,12 +32,30 @@
                 position: absolute;
                 right: 0;
                 top: 50%;
-                background-color: $white;			
                 display: block;
                 content: "";
                 height: 1px;
                 width: 80px;
             }
+
+            &--white {
+                &:before {
+                    background-color: $white;
+                }
+
+                &:after {
+                    background-color: $white;
+                }
+            }
+
+            &--grey {
+                &:before {
+                    background-color: $light-grey;
+                }
+
+                &:after {
+                    background-color: $light-grey;
+                }
+            }
         }
     }
-}

@@ -123,14 +123,6 @@
             border-bottom: solid;
         }
     }
-    
-    &__slogan {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 24px;
-        line-height: 29px;
-        color: $snow-white;
-        margin-bottom: 15px;
-    }
 
     &__heading {
         font-size: 72px;
@@ -139,6 +131,18 @@
         text-transform: uppercase;
         margin-bottom: 25px;
         letter-spacing: 0.1em;
+
+        @media screen and (max-width: $breakpoint-down-xs) {
+            font-size: 56px;
+        }
+    }
+    
+    &__slogan {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: $snow-white;
+        margin-bottom: 15px;
     }
     
     &__desc {
@@ -170,7 +174,7 @@
     .triangle-1 { 
         width: 0; 
         height: 0; 
-        border-bottom: 80px solid $white; 
+        border-bottom: 140px solid $white; 
         border-right: 100vw solid transparent;
         float: left;
     }
@@ -178,12 +182,12 @@
     .triangle-2 { 
         width: 0; 
         height: 0; 
-        border-bottom: 80px solid $white; 
+        border-bottom: 140px solid $white; 
         border-left: 100vw solid transparent; 
     }
     
     .triangle-holder {
-    bottom: 0;
+        bottom: 0;
     }
 
     &__decor-icon {
@@ -192,7 +196,7 @@
         width: 74px;
         height: 74px;
         position: absolute;
-        bottom: 0;        
+        bottom: -100px;        
         div {
             border-radius: 50%;
             background-color: $snow-white;

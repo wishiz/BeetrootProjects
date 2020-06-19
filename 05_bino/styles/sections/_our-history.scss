@@ -31,5 +31,33 @@
 
     &__title {
         margin-bottom: 37px;
+        text-align: left;
+
+        &:before {
+            content: "";
+            width: 6px;
+            height: 36px;
+            background-color: $red;
+            display: inline-block;
+            margin-right: 29px;
+        }
+
+        // .title__line {
+        //     margin-right: 28px;
+        // }
+    }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__img-wrapper {
+            margin: 0 auto 56px;
+        }
+
+        &__text {
+            margin: 0 auto;
+        }
     }
 }

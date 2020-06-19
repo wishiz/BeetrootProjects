@@ -8,14 +8,34 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
  
 
         &-item {
             cursor: pointer;
             letter-spacing: 0.075em;
+            margin-right: 50px;
 
             &:last-child {
                 margin-right: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-down-lg) {
+                margin-bottom: 50px;
+            }
+
+            @media screen and (max-width: $breakpoint-down-md) {
+                &:last-child {
+                    margin-right: 50px;
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-down-xs) {
+                margin: 0 auto 50px;
+
+                &:last-child {
+                    margin-right: auto;
+                }
             }
 
             &-icon {
