@@ -55,9 +55,8 @@
             &-divider {
                 width: 41px;
                 height: 1px;
-                margin: 0 auto;
+                margin: 0 auto 15px;
                 background-color: $title-grey;
-                margin-bottom: 15px;
             }
 
             &:hover {
@@ -73,14 +72,15 @@
                     transform: rotate(45deg);
                     border-color: $red;
                     color: $red;
-                }
 
-                .features__list-item-icon > svg {
-                    -webkit-transform: rotate(-45deg);
-                    -moz-transform: rotate(-45deg);
-                    -o-transform: rotate(-45deg);
-                    -ms-transform: rotate(-45deg);
-                    transform: rotate(-45deg);
+                    & > svg {
+                        @include center-icon;
+                        -webkit-transform: rotate(-45deg);
+                        -moz-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                    }
                 }
             }
         }

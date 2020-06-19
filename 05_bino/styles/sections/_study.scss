@@ -1,0 +1,105 @@
+.study {
+    background-color: $snow-white;
+
+    &__container {
+        min-height: 1191px;
+        padding-top: 137px;
+        position: relative;
+
+        .divider {
+            margin: 29px auto 67px;
+        }
+    }
+
+    &__slider {
+        max-width: 665px;
+        min-height: 629px;
+        background-color: $white;
+        top: 46px;
+        position: relative;
+        z-index: 5;
+
+        .slider__slide {
+            padding: 80px 58px 50px;
+
+            &-icon {
+                width: 75px;
+                height: 75px;
+                background-color: $red;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                position: relative;
+                margin: 0 auto 58px;
+
+                & > svg {
+                    @include center-icon;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+
+            &-title {
+                font-size: 18px;
+                font-weight: 600;
+                color: $title-grey;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+
+            &-divider {
+                width: 41px;
+                height: 1px;
+                margin: 0 auto 24px;
+                background-color: $title-grey;
+            }
+
+            &-desc {
+                margin-bottom: 45px;
+
+            }
+
+            &-btn {
+                margin: 0 auto 53px;
+            }
+
+            .slider__dots {
+                max-width: 52px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+
+
+                .slider__dot {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: $snow-white;
+        
+                    &--active {
+                        background-color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    &__img-wrapper {
+        max-width: 585px;
+        position: absolute;
+        right: 0;
+        top: 319px;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: $breakpoint-down-xs) {
+        &__img-wrapper {
+            display: none;
+        }
+    }
+}
