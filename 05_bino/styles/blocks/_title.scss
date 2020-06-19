@@ -1,0 +1,27 @@
+.title {
+    text-transform: uppercase;
+    font-size: 36px;
+	line-height: 43px;
+    font-weight: 900;
+    letter-spacing: 0.0432em;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    &--grey {
+        color: $title-grey;
+    }
+
+    &--light {
+        color: $snow-white;
+    }
+
+    &__line {
+        width: 6px;
+        height: 36px;
+        background-color: $red;
+        display: inline-block;
+    }
+
+    & > p {
+        
+    }
+}

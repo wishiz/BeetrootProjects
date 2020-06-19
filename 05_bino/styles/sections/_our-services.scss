@@ -1,0 +1,98 @@
+.our-services {
+    background-color: $dark-grey;
+
+    &__container {
+        min-height: 768px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 16px;
+        // max-width: 1202px;
+    }
+
+    &__list{
+        max-width: 1041px;
+        width: 55%;
+        text-align: right;
+        margin-right: 81px;
+        margin-top: 142px;
+
+        .item-name {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $red;
+            margin-bottom: 10px;
+            transition: font-weight 0.5s ease;
+            transition: font-size 0.5s ease;
+        }
+
+        .item-discription {
+            font-family: 'Source Sans Pro', sans-serif;
+            max-width: 587px;
+            margin-left: auto;
+            margin-bottom: 56px;
+            transition: color 0.5s ease;
+            line-height: 29px;
+        }
+    }
+
+    &__list-item{
+        cursor: pointer;
+    }
+
+    &__list-item:hover{
+        .item-name {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .item-discription {
+            color: $snow-white;
+        }
+    }
+
+    &__title {
+        margin-bottom: 58px;
+
+        &::after {
+            content: "";
+            width: 6px;
+            height: 36px;
+            background-color: $red;
+            display: inline-block;
+            margin-left: 29px;
+        }
+
+        // .title__line {
+        //     margin-left: 29px;
+        // }
+    }
+
+    &__img-wrapper {
+        width: 45%;
+        min-height: 768px;
+        max-width: 880px;
+        background-image: url(./../assets/images/our-services_img.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: $breakpoint-down-md) {
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__list {
+            margin: 0 auto;
+            margin-top: 142px;
+            width: 100%;
+            padding-right: 16px;
+        }
+
+        &__img-wrapper {
+            width: 100%;
+            min-height: 400px;
+        }
+    }
+}

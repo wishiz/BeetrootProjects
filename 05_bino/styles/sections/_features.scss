@@ -1,0 +1,105 @@
+.features {
+    
+    &__container {
+        padding-top: 83px;
+        min-height: 400px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+ 
+
+        &-item {
+            cursor: pointer;
+            letter-spacing: 0.075em;
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-down-lg) {
+                margin-bottom: 50px;
+            }
+
+            @media screen and (max-width: $breakpoint-down-md) {
+                &:last-child {
+                    margin-right: 50px;
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-down-xs) {
+                margin: 0 auto 50px;
+
+                &:last-child {
+                    margin-right: auto;
+                }
+            }
+
+            &-icon {
+                height: 73px;
+                width: 73px;
+                border: 1px solid rgba(153, 153, 153, 0.25);
+                margin: 0 auto;
+                position: relative;
+                margin-bottom: 25px;
+                transition: transform 0.4s ease-out;  
+
+                svg {
+                    @include centerer;
+                }
+            }
+
+            &-divider {
+                width: 41px;
+                height: 1px;
+                margin: 0 auto;
+                background-color: $title-grey;
+                margin-bottom: 15px;
+            }
+
+            &:hover {
+                .features__list-title{
+                    color: $red;
+                }
+
+                .features__list-item-icon {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    border-color: $red;
+                    color: $red;
+                }
+
+                .features__list-item-icon > svg {
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &-title {
+            text-transform: uppercase;
+            color: $title-grey;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        &-text {
+            max-width: 255px;
+            margin: 0 auto;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        
+    }
+}

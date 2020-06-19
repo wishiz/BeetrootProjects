@@ -1,0 +1,212 @@
+@import "./base/mixins";
+
+.home {
+    background-image: url(./../assets/images/home_bg-img.svg);
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+
+    &__container {
+        min-height: 100vh;
+        padding-top: 40px;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+    &__header {
+        width: 100%;;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 225px;
+
+        .menu-btn {
+            background-color: transparent;
+            position: relative;
+            display: block;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+            border: 0;
+            height: 24px;
+            width: 24px;
+        }
+        .menu-btn p {
+            background-color: #ffffff;
+            transition: 0.25s ease;
+            transform: rotate(0deg);
+            position: absolute;
+            display: block;
+            opacity: 1;
+            height: 3px;
+            width: 100%;
+        }
+
+        .menu-btn p:nth-of-type(1) {
+            left: 0;
+            top: 0;
+        }
+        
+        .menu-btn p:nth-of-type(2) {
+            right: 0;
+            top: 10px;
+        }
+        
+        .menu-btn p:nth-of-type(3) {
+            left: 0;
+            top: 20px;
+        }
+        
+        .menu-btn:hover p {
+            background-color: $red;
+        }
+        
+        .menu-btn:hover p:nth-of-type(1) {
+            transform: rotate(135deg);
+            top: 10px;
+        }
+        
+        .menu-btn:hover p:nth-of-type(2) {
+            opacity: 0;
+            right: 26px;
+        }
+        
+        .menu-btn:hover p:nth-of-type(3) {
+            transform: rotate(-135deg);
+            top: 10px;
+        }
+
+        .menu-btn {
+            display: none;
+        }
+        
+        @media (max-width: $breakpoint-down-md) {
+            .menu-btn {
+                display: block;
+            }
+        
+            .navbar {
+                display: none;
+            }
+        }
+    }
+
+    &__header-logo {
+        max-width: 141px;
+        min-width: 100px;
+    }
+
+    &__header-navbar {
+        justify-content: flex-end;
+        margin-left: 24px;
+
+        .navbar__item {
+            text-decoration: none;
+            color: $snow-white;
+            text-transform: uppercase;
+            margin-right: 24px;
+            align-self: center;
+            border-bottom: 1px $red;
+            border-style: none;
+            padding-bottom: 18px;
+        }
+
+        .navbar__item:last-child {
+            margin-right: 0;
+        }
+
+        .navbar__item:focus {
+            color: $red;
+            border-bottom: solid;
+        }
+    }
+
+    &__heading {
+        font-size: 72px;
+        font-weight: 700;
+        color: $snow-white;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        letter-spacing: 0.1em;
+
+        @media screen and (max-width: $breakpoint-down-xs) {
+            font-size: 56px;
+        }
+    }
+    
+    &__slogan {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: $snow-white;
+        margin-bottom: 15px;
+    }
+    
+    &__desc {
+        max-width: 600px;
+        width: 100%;
+        color: $snow-white;
+        line-height: 24px;
+        margin-bottom: 57px;
+    }
+
+    &__btn {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 138px;
+
+        @media screen and (max-width: $breakpoint-down-md) {
+            flex-direction: column;
+
+            .button--red {
+                margin-bottom: 30px;
+            }
+        }
+
+        .button--red {
+            margin-right: 30px;
+        }
+    }
+
+    .triangle-1 { 
+        width: 0; 
+        height: 0; 
+        border-bottom: 140px solid $white; 
+        border-right: 100vw solid transparent;
+        float: left;
+    }
+    
+    .triangle-2 { 
+        width: 0; 
+        height: 0; 
+        border-bottom: 140px solid $white; 
+        border-left: 100vw solid transparent; 
+    }
+    
+    .triangle-holder {
+        bottom: 0;
+    }
+
+    &__decor-icon {
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.3);;
+        width: 74px;
+        height: 74px;
+        position: absolute;
+        bottom: -100px;        
+        div {
+            border-radius: 50%;
+            background-color: $snow-white;
+            width: 64px;
+            height: 64px;
+            @include centerer;
+
+            svg {
+                @include centerer;
+            }
+        }
+    }
+}
