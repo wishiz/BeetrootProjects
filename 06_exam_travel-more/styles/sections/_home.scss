@@ -2,9 +2,10 @@
     background-image: url(../assets/images/home_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     &__container {
-        min-height: 90vh;
+        min-height: calc(100vh - 80px);
         scroll-behavior: smooth;
     }
 
@@ -26,10 +27,11 @@
     }
 
     input[type=text] {
-        padding: 20px 117px;
+        height: 60px;
         border: none;
         vertical-align: top;
         width: 650px;
+        padding: 0 250px 0 100px;
 
         &::placeholder {
             letter-spacing: 0.2em;
@@ -37,7 +39,7 @@
         }
 
         &:focus {
-            padding: 20px 56px;
+            padding: 0 206px 0 56px;
         }
     } 
     
@@ -45,19 +47,33 @@
     @media screen and (max-width: $breakpoint-down-sm){
         input[type=text] {
             width: 550px;
-            padding-left: 56px;
+            padding: 0 206px 0 56px;
+    
+            &:focus {
+                padding: 0 206px 0 56px;
+            }
         }
     }
 
     @media screen and (max-width: $breakpoint-down-xs){
 
+        &__container{
+            min-height: calc(100vh - 60px);
+        }
+
         input[type=text] {
+            height: 37px;
             width: 300px;
-            padding: 10px 10px;
             font-size: 12px;
+            padding: 0 53px 0 16px;
+
+            &::placeholder {
+                letter-spacing: 0.15em;
+                line-height: 1.45;
+            }
 
             &:focus {
-                padding: 10px;
+                padding: 0 53px 0 16px;
             }
         }
 

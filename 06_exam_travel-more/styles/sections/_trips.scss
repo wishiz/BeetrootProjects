@@ -1,32 +1,33 @@
 .trips {
 
-    &__spain1 {
-        background-image: url(../assets/images/spain_img1.svg);
+    &__country {
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
 
         &-container {
             min-height: 700px;
-            padding-top: 229px;
-        }
-    }
+            display: flex;
+            align-items: center;
+            padding-top: 118px;
 
-    &__spain2{
-        background-image: url(../assets/images/spain_img2.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
+            &--top {
+                justify-content: flex-start;
+            }
 
-        &-container {
-            min-height: 700px;
-            padding-top: 229px;
-            position: relative;
+            &--bottom {
+                justify-content: flex-end;
+            }
         }
 
-        &-trip-info {
-            position: absolute;
-            right: 0;
+        &--top {
+            background-image: url(../assets/images/spain_img1.svg);
+
+        }
+
+        &--bottom {
+            background-image: url(../assets/images/spain_img2.svg);
         }
     }
 
@@ -57,9 +58,11 @@
     }
 
     @media screen and (max-width: $breakpoint-down-sm){
-        &__spain2 {
-            &-trip-info {
-                position: static;
+
+        &__country {
+            &-container {
+                min-height: 600px;
+                padding-top: 0;
             }
         }
     }
