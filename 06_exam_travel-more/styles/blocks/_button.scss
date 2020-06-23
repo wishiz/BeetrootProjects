@@ -32,12 +32,15 @@
 	&--blue {
 		background-color: $blue;
 		color: $white;
-		transition: background-color 0.5s ease, font-size 0.5s ease;
+		transition: background-color 0.5s ease;
 
 		&:hover {
 			background-color: $blue-dark;
-			font-size: 120%;
 		}
+	}
+
+	@media screen and (max-width: $breakpoint-down-xs) {
+		width: 100%;
 	}
 }
 
@@ -64,7 +67,7 @@ button[type=submit] {
 	color: $white;
 	margin: 0 auto;
 	position: relative;
-	font-weight: 300;
+	letter-spacing: 0.2em;
 
 	&:hover {
 		text-decoration: none;
@@ -73,15 +76,15 @@ button[type=submit] {
 
 	&:after {
 		content: "";
-		border: solid $white 1px;
-		border-width: 0 1px 1px 0;
+		border: solid $white 2px;
+		border-width: 0 2px 2px 0;
 		display: inline-block;
 		padding: 3px;
 		transform: rotate(45deg);
-		  -webkit-transform: rotate(45deg);
-		  position: absolute;
-		  bottom: -5px;
-		  left: 50%
+		-webkit-transform: rotate(45deg);
+		position: absolute;
+		bottom: -17px;
+		left: 40%
 	}
 }
 

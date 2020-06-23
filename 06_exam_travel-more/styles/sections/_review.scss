@@ -2,6 +2,7 @@
     background-image: url(../assets/images/review_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-color: rgba(35, 35, 35, 0.9);
     background-blend-mode: darken;
     background-position: center;
@@ -12,8 +13,11 @@
         padding-bottom: 56px;
     }
 
+    &__title {
+        margin-bottom: 91px;
+    }
+
     &__block {
-        margin-top: 91px;
         display: flex;
         flex-direction: row;
         background-color: $grey-dark;
@@ -24,7 +28,8 @@
             max-height: 284px;
 
             img {
-                height: 100%;  
+                height: 100%;
+                width: 100%;
             }
         }
 
@@ -51,30 +56,46 @@
 
     @media screen and (max-width: $breakpoint-down-md){
         &__block {
-            margin: 91px auto 0;
+            margin: 0 auto;
             max-width: 560px;
             flex-direction: column;
             align-items: center;
             justify-items: center;
+            padding: 40px;
     
             &-img {
-                margin-top: 50px;
-                height: 284px;    
+                width: 100%;
+                margin-bottom: 56px; 
+                max-height: 100%;
+
                 img {
                     object-fit: initial;
+                    height: auto;
                 }
             }
     
             &-text {
+                padding: 0;
+            }
+        }
+    }
 
-    
-                h2 {
-           
-                }
-    
-                p {
+    @media screen and (max-width: $breakpoint-down-sm) {
+        &__container {
+            padding: 80px 0;
+        }
 
-                }
+        &__title {
+            margin-bottom: 56px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-down-xxs) {
+        &__block {
+            padding: 24px;
+
+            &-img {
+                height: auto;
             }
         }
     }
