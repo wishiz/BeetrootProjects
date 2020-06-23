@@ -793,7 +793,7 @@ button[type=submit] svg {
 }
 @media screen and (max-width: 767.98px) {
   .review__container {
-    padding: 80px 0;
+    padding: 80px 16px;
   }
   .review__title {
     margin-bottom: 56px;
