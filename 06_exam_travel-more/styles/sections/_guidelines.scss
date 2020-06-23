@@ -35,21 +35,22 @@
 
     @media screen and (max-width: $breakpoint-down-sm){
 
-        &__container {
+        &__list {
             flex-direction: column;
-            padding: 24px 0 32px 0;
-        }
+            padding: 24px 0;
 
-        &__item {
-            svg {
-                height: 78px;
-                width: 78px;
-                padding: 14px;
-            }
-            
-            h2 {
-                font-size: 20px;
-                line-height: 1.2;
+            &-item {
+                margin-bottom: 10px;
+                svg {
+                    height: 78px;
+                    width: 78px;
+                    padding: 14px;
+                }
+                
+                h2 {
+                    font-size: 20px;
+                    line-height: 1.2;
+                }
             }
         }
     }
