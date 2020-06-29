@@ -18,7 +18,7 @@
         }
     }
 
-    &__text {
+    &__block-text {
         font-family: 'Source Sans Pro';
 
         p {
@@ -32,8 +32,10 @@
     &__title {
         margin-bottom: 37px;
         text-align: left;
+        line-height: 20px;
 
         &:before {
+            vertical-align: bottom;
             content: "";
             width: 6px;
             height: 36px;
@@ -41,10 +43,6 @@
             display: inline-block;
             margin-right: 29px;
         }
-
-        // .title__line {
-        //     margin-right: 28px;
-        // }
     }
 
     @media screen and (max-width: $breakpoint-down-sm) {
@@ -56,7 +54,7 @@
             margin: 0 auto 56px;
         }
 
-        &__text {
+        &__block-text {
             margin: 0 auto;
         }
     }

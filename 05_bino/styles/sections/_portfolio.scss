@@ -26,7 +26,6 @@
             background-color: rgba($color: $red, $alpha: 0.7);
             opacity: 0;
             transition: opacity 1s ease;
-            padding: 347px 250px 56px 50px;
             color: $white;
 
             .overlay-divider {
@@ -37,6 +36,9 @@
             }
 
             .overlay-text {
+                position: absolute;
+                bottom: 72px;
+                left: 50px;
                 text-align: left;
             }
 
@@ -49,14 +51,22 @@
         }
 
         &-card {
-            max-width: 480px;
-            min-width: 240px;
+
             cursor: pointer;
             position: relative;
 
             &:hover  .portfolio__images-card-overlay {
                 opacity: 1;
             }
+        }
+    }
+
+    &__img-wrapper {
+        max-width: 480px;
+        max-height: 480px;
+        
+        & > img {
+            height: 100%;
         }
     }
 

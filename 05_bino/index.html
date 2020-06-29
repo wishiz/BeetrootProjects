@@ -16,29 +16,33 @@
 
 <body>
     <main>
+
+        <header class="header">
+            <div class="content-container header__container">
+                <div class="header__logo">
+                    <img class="img-contain" src="./assets/images/header_logo.svg" alt="bino_logo">
+                </div>
+
+                <nav class="navbar header__navbar">
+                    <a href="#home" class="navbar__item">Home</a>
+                    <a href="#features" class="navbar__item">About us</a>
+                    <a href="#our-history" class="navbar__item">History</a>
+                    <a href="#our-services" class="navbar__item">Services</a>
+                    <a href="#portfolio" class="navbar__item">Portfolio</a>
+                    <a href="#trial" class="navbar__item">Get started</a>
+                    <a href="#contact" class="navbar__item">Contact</a>
+                </nav>
+
+                <button class="menu-btn header__menu-btn">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </button>
+            </div>
+        </header>
+
         <section id="home" class="home">
             <div class="content-container home__container">
-                <header class="home__header">
-                    <div class="home__header-logo">
-                        <img class="img-contain" src="./assets/images/header_logo.svg" alt="bino_logo">
-                    </div>
-
-                    <nav class="navbar home__header-navbar">
-                        <a href="#home" class="navbar__item">Home</a>
-                        <a href="#features" class="navbar__item">About us</a>
-                        <a href="#our-history" class="navbar__item">History</a>
-                        <a href="#our-services" class="navbar__item">Services</a>
-                        <a href="#portfolio" class="navbar__item">Portfolio</a>
-                        <a href="#trial" class="navbar__item">Get started</a>
-                        <a href="#contact" class="navbar__item">Contact</a>
-                    </nav>
-
-                    <button class="menu-btn home__menu-btn">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </button>
-                </header>
 
                 <h2 class="home__slogan">Our Clients Are Our First Priority</h2>
                 <h1 class="home__heading">Welcome to bino</h1>
@@ -49,10 +53,12 @@
                     </div>
                 </div>
 
-                <p class="home__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                <p class="home__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem
                     Ipsum
                     has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type
                     and scrambled it to make a type specimen book.</p>
 
                 <div class="home__btn">
@@ -71,7 +77,6 @@
                         </svg>
                     </div>
                 </div>
-
             </div>
             <div class="triangle-holder">
                 <div class="triangle-1"></div>
@@ -85,11 +90,13 @@
                 <div class="features__list">
                     <div class="features__list-item">
                         <div class="features__list-item-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="27" height="13" viewBox="0 0 27 13">
-                                <image id="_1" data-name="1" width="27" height="13"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAANCAYAAABYWxXTAAAABHNCSVQICAgIfAhkiAAAAldJREFUOE991E+oVVUUBvDfC0WiGmQqm6BIRJFCUWgidgYZEWgHshAVU/EPOnAQJtbANE2QIlBByCgVNVG0QcYmHDgptiIFpYbixEFO9OQ/pERIkRdLzpXr8727J/dyWN/61lrft1Zff3+/zmvqaiTex+t4BtdxDIdSLncfBg7409TVcMxBjdG4jZ9xMOVytRPe1yFr6mo8NuN5/IEIegFT8Ds+6wYOKHA9puFPXEIUPRU3sT7lciHiH5A1dTUG3+EaNuEv3EdU/Aq24G8sT7nc626sqauvEYWuwxnEBJ7Ai/gEY7Eg5XK5Q7YRr2JRyiWqeeS1Xe/FbhzFy4hq38RqLE25nB8E9zT2RLcpl7V9V95+7dk2wecpl9Bn0NfU1YIYCc4hJhF6TsIXKZddPXAzWnlmB1noNB3zUy4xqqHIJuAU9rXVzmu7mpZyCa2Gwo0Ko+C3IDvd6jEn5fJvD9BEfIU1KZfTTV2Na8f6QcrlbA/ck+FmvBRks/ARlqVcLvYAVQhto6ibTV1Fkh/xZcrleA9cGCR02xZkI/A9jqdcdgwGauqqL7RBSrks6rL9t7iDD1Mu4d7HXlNXSzEXsztufBcbsCrlcnIQV8XCftp2/2sX2WTsx9aUS/wOdHE4PFZje8rlQPdSx37NxDc4gdAvlvOt9qrsTLkEcGDCxdEZDuMn3MBTrelW4JeUy8cB6iYbhiWILmMx/2nJ4p7tTrn80EOX0H0lIkfsaexXaJqj+M6pe0gWiZq6iuD38A6ei0/tXRxy/7pG+gYWtufuVkt0JOXyXyfmfzZo7OMgB+taAAAAAElFTkSuQmCC" />
-                            </svg>
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="27" height="13" viewBox="0 0 27 13">
+                                    <image id="_1" data-name="1" width="27" height="13"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAANCAYAAABYWxXTAAAABHNCSVQICAgIfAhkiAAAAldJREFUOE991E+oVVUUBvDfC0WiGmQqm6BIRJFCUWgidgYZEWgHshAVU/EPOnAQJtbANE2QIlBByCgVNVG0QcYmHDgptiIFpYbixEFO9OQ/pERIkRdLzpXr8727J/dyWN/61lrft1Zff3+/zmvqaiTex+t4BtdxDIdSLncfBg7409TVcMxBjdG4jZ9xMOVytRPe1yFr6mo8NuN5/IEIegFT8Ds+6wYOKHA9puFPXEIUPRU3sT7lciHiH5A1dTUG3+EaNuEv3EdU/Aq24G8sT7nc626sqauvEYWuwxnEBJ7Ai/gEY7Eg5XK5Q7YRr2JRyiWqeeS1Xe/FbhzFy4hq38RqLE25nB8E9zT2RLcpl7V9V95+7dk2wecpl9Bn0NfU1YIYCc4hJhF6TsIXKZddPXAzWnlmB1noNB3zUy4xqqHIJuAU9rXVzmu7mpZyCa2Gwo0Ko+C3IDvd6jEn5fJvD9BEfIU1KZfTTV2Na8f6QcrlbA/ck+FmvBRks/ARlqVcLvYAVQhto6ibTV1Fkh/xZcrleA9cGCR02xZkI/A9jqdcdgwGauqqL7RBSrks6rL9t7iDD1Mu4d7HXlNXSzEXsztufBcbsCrlcnIQV8XCftp2/2sX2WTsx9aUS/wOdHE4PFZje8rlQPdSx37NxDc4gdAvlvOt9qrsTLkEcGDCxdEZDuMn3MBTrelW4JeUy8cB6iYbhiWILmMx/2nJ4p7tTrn80EOX0H0lIkfsaexXaJqj+M6pe0gWiZq6iuD38A6ei0/tXRxy/7pG+gYWtufuVkt0JOXyXyfmfzZo7OMgB+taAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
                         </div>
 
                         <h3 class="features__list-title">Sleek design</h3>
@@ -103,11 +110,13 @@
 
                     <div class="features__list-item">
                         <div class="features__list-item-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="21" height="19" viewBox="0 0 21 19">
-                                <image id="_2" data-name="2" width="21" height="19"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAAABHNCSVQICAgIfAhkiAAAAfBJREFUOE+tlLlrVVEQxn/RwsJGtBlBRERQUdSIK3j+AfHg1lqJaKVoYRotRFyKuGBcEncjiSsuMGAj2kynWNnZiFUONlZiZ+QL54UXfXnxGU9zuXe++d25c7+ZrtHRUXRKTpuA/cAC4CcwExgBBs3jTdUodhBYPZYEM4DvwAtgyDyUR5egJac9wD5AyW+Br8A8IAFbgWHgI3AS+AS8Aj4Ds4C1wE7gC9BjHj+6RrZtycAx4JB5vKsVjF9KTiuAy8BC4IR5DLXQzAH6gG/AYUFVWZ95vPxd3LgvOW0Eus1joI1mLiDGaUGfm8euycSdPC85HQHWCXrKPI53ktym2u1qo6C95nH0P0F3AwcEfQ3sMA9ZY1qn5HQWmC3oE+C9efROh1hdchfYK+hS4D5wzjye/gu45LSoMobN43rD/Jom+eyieTzsBFxyWgzcAdw8zo9PVB3BDcDVCn7wN+CS0xLgHiBbXmjkjFXaZPL1dXr6zWOwHbjkpLbdBJ6Zx6Vm7QRorbgbuAbcMo/brcAlp+WKayeYh7QTzh/QCl4F9Kv5anxzRslpTX2pYi3HtiW0glcCAj4yDy0UbTN9hUAD5iH7tDyTQitkGXADkCM+AOqdgG373RZawfrDV4D5wBnzeDyVM6aEVrCW8Gbz6JkKqPgvy//NG991zWgAAAAASUVORK5CYII=" />
-                            </svg>
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="21" height="19" viewBox="0 0 21 19">
+                                    <image id="_2" data-name="2" width="21" height="19"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAAABHNCSVQICAgIfAhkiAAAAfBJREFUOE+tlLlrVVEQxn/RwsJGtBlBRERQUdSIK3j+AfHg1lqJaKVoYRotRFyKuGBcEncjiSsuMGAj2kynWNnZiFUONlZiZ+QL54UXfXnxGU9zuXe++d25c7+ZrtHRUXRKTpuA/cAC4CcwExgBBs3jTdUodhBYPZYEM4DvwAtgyDyUR5egJac9wD5AyW+Br8A8IAFbgWHgI3AS+AS8Aj4Ds4C1wE7gC9BjHj+6RrZtycAx4JB5vKsVjF9KTiuAy8BC4IR5DLXQzAH6gG/AYUFVWZ95vPxd3LgvOW0Eus1joI1mLiDGaUGfm8euycSdPC85HQHWCXrKPI53ktym2u1qo6C95nH0P0F3AwcEfQ3sMA9ZY1qn5HQWmC3oE+C9efROh1hdchfYK+hS4D5wzjye/gu45LSoMobN43rD/Jom+eyieTzsBFxyWgzcAdw8zo9PVB3BDcDVCn7wN+CS0xLgHiBbXmjkjFXaZPL1dXr6zWOwHbjkpLbdBJ6Zx6Vm7QRorbgbuAbcMo/brcAlp+WKayeYh7QTzh/QCl4F9Kv5anxzRslpTX2pYi3HtiW0glcCAj4yDy0UbTN9hUAD5iH7tDyTQitkGXADkCM+AOqdgG373RZawfrDV4D5wBnzeDyVM6aEVrCW8Gbz6JkKqPgvy//NG991zWgAAAAASUVORK5CYII=" />
+                                </svg>
+                            </div>
                         </div>
 
                         <h3 class="features__list-title">Clean code</h3>
@@ -121,11 +130,13 @@
 
                     <div class="features__list-item">
                         <div class="features__list-item-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="17" height="27" viewBox="0 0 17 27">
-                                <image id="_3" data-name="3" width="17" height="27"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAbCAYAAACa9mScAAAABHNCSVQICAgIfAhkiAAAAxhJREFUOE+VlVuI1VUUxn/TzQythIwV9FQEUilC9GKzLemhDHeKYjejdCjTLFTopd4iLIKorCSztIeitAtJK7GrhsvIbl7qLUIIMndZQWSWmTPyyZrhjDI4bjic/T+c9fvvvda3vtXV19dH52q1XAzcDHQDZwKHgNOA/4DPgbXm8X1nTFcnpNUyC7gzAz4DfgD2A2cBggus/avmsbYfNABptSwAbsy3vQPsTcBh4BRgFHABUIFrgA/M4ymBjkJaLQpeBGwGXjaPXwbdseOh1XIecAdwPbDaPNZ17Z3WbQoEvgaeNo/fhwL0/95qOQe4L0/UI8jdwHTgIfP49kSADtA44DFgiyDrgG3AK+bx20lAzgVuA64TRHl4BthoHv+eBOQM4FpgqSCfAE8AH5vHoVaLKqHPYfMYEFGrpQs4Feg1j95Wi/aTgQcE+RBYA7xrHgdaLZcBlwBfmIfKfHRlVQqw2zx2tVpGAFOBBYK8AOwBXlRQq2VClnBPvw4Scg+gZL5mHl+1WsYCc4Hxgqjei4GHzWNbq0WKvAWYBsxXslstZwMvAZtSrftbLVcoRvIQREHPA78Cy83jp1bL5QIAO81jTavl1tTESvPY0WqRcu8HLtL/+hV7JfAIsAFYlQmcDVxtHj2tlhXAd7oK8DdwFzBTMeaxtbN3dKWrdCrz2NxqmQHMNo85rZbVWb3XWy2TgCXAN+bx+EDvZOJ0rSeBv4BlgCox0zzmtVp03U+B94EHgfOlD/P4cxAkQWrEGzLgZ6DHPOYmZD0glU4BPjKPt4+zgoSMyUrp24GbzGN+q+VZ4L3sXL19hXnsGwoiVd4LqHxKcrd5LG21PAp8mY26HXiuU82DnC1PI2dbmKYk75Cabwf+SHdbZR4rh7THhKjcEtvILOc/udezljx264kgqtLE7As1mbpVJq1mVJ+ptPLdgXXcdfI0F6bjS+4HEySRvWEePx5rF0NBJHs5v5ZGxunyY2C9eewcLuTSPMnojrlzAHhLNjBciExpfIJ6c3i9Cewyj/+HBcm8aLbIazR3NAkXmcfGYwF6PgKUfGJFwpvs1wAAAABJRU5ErkJggg==" />
-                            </svg>
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17" height="27" viewBox="0 0 17 27">
+                                    <image id="_3" data-name="3" width="17" height="27"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAbCAYAAACa9mScAAAABHNCSVQICAgIfAhkiAAAAxhJREFUOE+VlVuI1VUUxn/TzQythIwV9FQEUilC9GKzLemhDHeKYjejdCjTLFTopd4iLIKorCSztIeitAtJK7GrhsvIbl7qLUIIMndZQWSWmTPyyZrhjDI4bjic/T+c9fvvvda3vtXV19dH52q1XAzcDHQDZwKHgNOA/4DPgbXm8X1nTFcnpNUyC7gzAz4DfgD2A2cBggus/avmsbYfNABptSwAbsy3vQPsTcBh4BRgFHABUIFrgA/M4ymBjkJaLQpeBGwGXjaPXwbdseOh1XIecAdwPbDaPNZ17Z3WbQoEvgaeNo/fhwL0/95qOQe4L0/UI8jdwHTgIfP49kSADtA44DFgiyDrgG3AK+bx20lAzgVuA64TRHl4BthoHv+eBOQM4FpgqSCfAE8AH5vHoVaLKqHPYfMYEFGrpQs4Feg1j95Wi/aTgQcE+RBYA7xrHgdaLZcBlwBfmIfKfHRlVQqw2zx2tVpGAFOBBYK8AOwBXlRQq2VClnBPvw4Scg+gZL5mHl+1WsYCc4Hxgqjei4GHzWNbq0WKvAWYBsxXslstZwMvAZtSrftbLVcoRvIQREHPA78Cy83jp1bL5QIAO81jTavl1tTESvPY0WqRcu8HLtL/+hV7JfAIsAFYlQmcDVxtHj2tlhXAd7oK8DdwFzBTMeaxtbN3dKWrdCrz2NxqmQHMNo85rZbVWb3XWy2TgCXAN+bx+EDvZOJ0rSeBv4BlgCox0zzmtVp03U+B94EHgfOlD/P4cxAkQWrEGzLgZ6DHPOYmZD0glU4BPjKPt4+zgoSMyUrp24GbzGN+q+VZ4L3sXL19hXnsGwoiVd4LqHxKcrd5LG21PAp8mY26HXiuU82DnC1PI2dbmKYk75Cabwf+SHdbZR4rh7THhKjcEtvILOc/udezljx264kgqtLE7As1mbpVJq1mVJ+ptPLdgXXcdfI0F6bjS+4HEySRvWEePx5rF0NBJHs5v5ZGxunyY2C9eewcLuTSPMnojrlzAHhLNjBciExpfIJ6c3i9Cewyj/+HBcm8aLbIazR3NAkXmcfGYwF6PgKUfGJFwpvs1wAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </div>
                         </div>
 
                         <h3 class="features__list-title">Creative ideas</h3>
@@ -138,11 +149,13 @@
 
                     <div class="features__list-item">
                         <div class="features__list-item-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="21" height="22" viewBox="0 0 21 22">
-                                <image id="_4" data-name="4" width="21" height="22"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAAABHNCSVQICAgIfAhkiAAAAdRJREFUOE/V1U+ITVEcB/DP8/9PYudsiNJgIRYWFnOzVJpLkr0slCQLJTbGNCv/LawoYmOnOCQLq7MkKywtbOamiNnMxDA6uY/X9N6b+1j51av76t3PPb/f+Z53WxMjw3ewAVNomb9msRr3Q0w3uv28NTEynBDxFkvmMTP4HQcwHWI61gt9hDMhpow2qqosjmB7iOlkL/QJzoeYXjQSUZXFcQz1Qx9jbED0FDaHmI72WunfoPuxMcR0fSC0Kosh7MTiOTfmzVpYf752Scz7vPtdV1qVxRj24lUNdMbtGzLemZYZrMWqfugVfMK1ejWdaPs6w+3KUduKcxl9iLNzI1WVxUV8CDFdHiAVWzCe0Zd4itdYWreUr/fhc4gp442qKottGM3oODYhzym3tQLPsA6TIaZLjcRf+f2NLqqhvKPtGU3n7OaZhpguDIzOznbO+s/t9Uw//jfoRIgpR6pR1QdmvNWn/XwEJ3G1R05nQkxf8tOqsliA5diR49kPHcVBvOmCZmsZ7oaYHlRlsQun6z9v/dD19ZNX4sec/vPpyUfyEHLk1uAwbuFdT7TJEKuy2IMTdSfPQ0x5VL1X2gSt57kbt3EvxJSz/e9oDefXylSI6Wb+/hNecNOiCnvdAQAAAABJRU5ErkJggg==" />
-                            </svg>
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="21" height="22" viewBox="0 0 21 22">
+                                    <image id="_4" data-name="4" width="21" height="22"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAAABHNCSVQICAgIfAhkiAAAAdRJREFUOE/V1U+ITVEcB/DP8/9PYudsiNJgIRYWFnOzVJpLkr0slCQLJTbGNCv/LawoYmOnOCQLq7MkKywtbOamiNnMxDA6uY/X9N6b+1j51av76t3PPb/f+Z53WxMjw3ewAVNomb9msRr3Q0w3uv28NTEynBDxFkvmMTP4HQcwHWI61gt9hDMhpow2qqosjmB7iOlkL/QJzoeYXjQSUZXFcQz1Qx9jbED0FDaHmI72WunfoPuxMcR0fSC0Kosh7MTiOTfmzVpYf752Scz7vPtdV1qVxRj24lUNdMbtGzLemZYZrMWqfugVfMK1ejWdaPs6w+3KUduKcxl9iLNzI1WVxUV8CDFdHiAVWzCe0Zd4itdYWreUr/fhc4gp442qKottGM3oODYhzym3tQLPsA6TIaZLjcRf+f2NLqqhvKPtGU3n7OaZhpguDIzOznbO+s/t9Uw//jfoRIgpR6pR1QdmvNWn/XwEJ3G1R05nQkxf8tOqsliA5diR49kPHcVBvOmCZmsZ7oaYHlRlsQun6z9v/dD19ZNX4sec/vPpyUfyEHLk1uAwbuFdT7TJEKuy2IMTdSfPQ0x5VL1X2gSt57kbt3EvxJSz/e9oDefXylSI6Wb+/hNecNOiCnvdAQAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </div>
 
                         </div>
 
@@ -165,7 +178,7 @@
                     <img src="./assets/images/features_monitor.svg" alt="our-history-img">
                 </div>
 
-                <div class="our-history__text">
+                <div class="our-history__block-text">
                     <h2 class="title title--grey our-history__title">Our history</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been
                         the
@@ -226,8 +239,9 @@
                 <div class="portfolio__images">
 
                     <div class="portfolio__images-card">
-                        <div class="portfolio__img-wrapper">
-                            <img src="./assets/images/portfolio_1.svg" alt="portofolio-pic1">
+                        <div>
+                            <div class="portfolio__img-wrapper"><img class="img-cover"
+                                    src="./assets/images/portfolio_1.svg" alt="portofolio-pic1"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>
@@ -239,7 +253,8 @@
 
                     <div class="portfolio__images-card">
                         <div>
-                            <img src="./assets/images/portfolio_2.svg" alt="portofolio-pic2">
+                            <div class="portfolio__img-wrapper"><img class="img-cover"
+                                    src="./assets/images/portfolio_2.svg" alt="portofolio-pic2"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>
@@ -251,7 +266,8 @@
 
                     <div class="portfolio__images-card">
                         <div>
-                            <img src="./assets/images/portfolio_3.svg" alt="portofolio-pic3">
+                            <div class="portfolio__img-wrapper"><img class="img-cover"
+                                    src="./assets/images/portfolio_3.svg" alt="portofolio-pic3"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>
@@ -263,7 +279,8 @@
 
                     <div class="portfolio__images-card">
                         <div>
-                            <img src="./assets/images/portfolio_4.svg" alt="portofolio-pic4">
+                            <div class="portfolio__img-wrapper"><img class="img-cover" class="portfolio__img-wrapper"
+                                    src="./assets/images/portfolio_4.svg" alt="portofolio-pic4"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>
@@ -275,7 +292,8 @@
 
                     <div class="portfolio__images-card">
                         <div>
-                            <img src="./assets/images/portfolio_5.svg" alt="portofolio-pic5">
+                            <div class="portfolio__img-wrapper"><img class="img-cover"
+                                    src="./assets/images/portfolio_5.svg" alt="portofolio-pic5"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>
@@ -287,7 +305,8 @@
 
                     <div class="portfolio__images-card">
                         <div>
-                            <img src="./assets/images/portfolio_6.svg" alt="portofolio-pic6">
+                            <div class="portfolio__img-wrapper"><img class="img-cover"
+                                    src="./assets/images/portfolio_6.svg" alt="portofolio-pic6"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>
@@ -299,7 +318,8 @@
 
                     <div class="portfolio__images-card">
                         <div>
-                            <img src="./assets/images/portfolio_7.svg" alt="portofolio-pic7">
+                            <div class="portfolio__img-wrapper"><img class="img-cover"
+                                    src="./assets/images/portfolio_7.svg" alt="portofolio-pic7"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>
@@ -311,7 +331,8 @@
 
                     <div class="portfolio__images-card">
                         <div>
-                            <img src="./assets/images/portfolio_8.svg" alt="portofolio-pic8">
+                            <div class="portfolio__img-wrapper"><img class="img-cover"
+                                    src="./assets/images/portfolio_8.svg" alt="portofolio-pic8"></div>
                             <div class="portfolio__images-card-overlay">
                                 <div class="overlay-text">
                                     <div class="overlay-divider"></div>

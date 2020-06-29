@@ -9,9 +9,9 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
- 
 
         &-item {
+            width: calc((100% - 150px)/4);
             cursor: pointer;
             letter-spacing: 0.075em;
             margin-right: 50px;
@@ -22,19 +22,18 @@
 
             @media screen and (max-width: $breakpoint-down-lg) {
                 margin-bottom: 50px;
-            }
+                width: calc((100% - 150px)/2);
 
-            @media screen and (max-width: $breakpoint-down-md) {
                 &:last-child {
                     margin-right: 50px;
                 }
             }
 
             @media screen and (max-width: $breakpoint-down-xs) {
-                margin: 0 auto 50px;
+                width: 100%;
 
                 &:last-child {
-                    margin-right: auto;
+                    margin-right: 50px;
                 }
             }
 
@@ -47,8 +46,10 @@
                 margin-bottom: 25px;
                 transition: transform 0.4s ease-out;  
 
-                svg {
+                .icon-wrapper {
                     @include centerer;
+                    width: 22px;
+                    height: 22px;
                 }
             }
 
@@ -72,9 +73,11 @@
                     transform: rotate(45deg);
                     border-color: $red;
                     color: $red;
+                    transform-origin: 50% 50%;
 
-                    & > svg {
-                        @include center-icon;
+                    .icon-wrapper {
+                        transform-origin: 50% 50%;
+                        // transform-origin: 90% 125%;
                         -webkit-transform: rotate(-45deg);
                         -moz-transform: rotate(-45deg);
                         -o-transform: rotate(-45deg);

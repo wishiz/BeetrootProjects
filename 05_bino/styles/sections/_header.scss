@@ -1,0 +1,58 @@
+.header {
+    height: 93px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    &-logo {
+        max-width: 141px;
+        min-width: 100px;
+    }
+
+    &__navbar {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 24px;
+    
+        .navbar__item {
+            display: flex;
+            text-decoration: none;
+            color: $snow-white;
+            text-transform: uppercase;
+            margin-left: 24px;
+            align-self: center;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 16px;
+            transition: color 0.5s ease, border-bottom 0.5s ease;
+
+            &:hover {
+                color: $red;
+                border-color: $red;
+            }
+        }
+    }
+
+    .menu-btn {
+        display: none;
+    }
+    
+    @media (max-width: $breakpoint-down-md) {
+        .menu-btn {
+            display: block;
+        }
+    
+        .navbar {
+            display: none;
+        }
+    }
+}
