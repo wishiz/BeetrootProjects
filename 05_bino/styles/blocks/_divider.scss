@@ -8,20 +8,19 @@
         width: 35px;
         padding: 0 14px;
         margin: 0 auto;
-        height: 7px;
+        height: 8px;
     }
 
     &-lines {
             border-radius: 50%;
-            height: 7px;
-            width: 7px;
+            height: 8px;
+            width: 8px;
             background-color: $red;
-            z-index: 2;
 
             &:before {
                 position: absolute;
                 left: 0;
-                top: 50%;
+                top: 47%;
                 display: block;
                 content: "";
                 height: 1px;
@@ -31,7 +30,7 @@
             &:after {
                 position: absolute;
                 right: 0;
-                top: 50%;
+                top: 47%;
                 display: block;
                 content: "";
                 height: 1px;

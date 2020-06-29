@@ -53,3 +53,60 @@
 		}
 	}
 }
+
+.menu-btn {
+	background-color: transparent;
+	position: relative;
+	display: block;
+	outline: none;
+	padding: 0;
+	cursor: pointer;
+	border: 0;
+	height: 24px;
+	width: 24px;
+
+	p {
+		background-color: #ffffff;
+		transition: 0.25s ease;
+		transform: rotate(0deg);
+		position: absolute;
+		display: block;
+		opacity: 1;
+		height: 3px;
+		width: 100%;
+
+		&:nth-of-type(1) {
+			left: 0;
+			top: 0;
+		}
+
+		&:nth-of-type(2) {
+			right: 0;
+			top: 10px;
+		}
+
+		&:nth-of-type(3) {
+			left: 0;
+			top: 20px;
+		}
+	}
+
+	&:hover p {
+		background-color: $red;
+
+		&:nth-of-type(1) {
+			transform: rotate(135deg);
+			top: 10px;
+		}
+
+		&:nth-of-type(2) {
+			opacity: 0;
+			right: 26px;
+		}
+
+		&:nth-of-type(3) {
+			transform: rotate(-135deg);
+			top: 10px;
+		}
+	}
+}
