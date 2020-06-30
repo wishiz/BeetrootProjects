@@ -1,0 +1,119 @@
+.contact-us {
+    background-image: url(../assets/images/contact-us-bg.svg);
+    background-color: #F0F0F0;
+}
+
+.contact-us__content-container {
+    min-height: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 127px;
+}
+
+.contact-us__section-title {
+    margin-bottom: 151px;
+}
+
+.contact-us__section-title h2 {
+    color: #E6E6E6;
+    z-index: 1;
+}
+
+.contact-us__section-title p {
+    z-index: 2;
+}
+
+
+.contact-us__form {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__section-title {
+    margin-bottom: 104px;
+}
+
+.contact-us__input-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+    max-width: calc((1140 - 20) / 2);
+    width: 100%;
+}
+
+.contact-us__input-block input {
+    min-height: 60px;
+    border: 1px solid #DEDEDE;
+    appearance: none;
+    padding: 0 16px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    outline: none;
+}
+
+.contact-us__input-block:first-child  {
+    margin-right: 20px;
+}
+
+.contact-us__input-block .error {
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.contact-us__input-block input:focus:invalid ~.error {
+    display: block;
+}
+
+.contact-us__input-block input:focus:invalid {
+    border-color: #FFE400;
+}
+
+.contact-us__input-block input:focus {
+    background-color: #E6E6E6;
+}
+
+.contact-us__inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-us__textarea-block textarea {
+    max-width: 1140px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #DEDEDE;
+    min-height: 510px;
+    outline: none;
+}
+
+.contact-us__textarea-block textarea::placeholder {
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.contact-us__textarea-block textarea {
+    font-family: 'Poppins';
+    padding: 23px 0 0 20px;
+    font-size: 16px;
+}
+
+.contact-us__textarea-block textarea:focus {
+    border-color: #FFE400;
+    background-color: #E6E6E6;
+}
+
+.contact-us__button-yellow {
+    max-width: 147px;
+    margin-top: 25px;
+}
+
+@media (max-width: 575px) {
+    .contact-us__inline {
+        display: block;
+    }
+}
