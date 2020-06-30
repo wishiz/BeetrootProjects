@@ -390,8 +390,6 @@ input:checked ~ .our-services-list-card-overlay {
 	transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/* .our-services-list-card-overlay:focus */
-
 
 input {
     display: none;
