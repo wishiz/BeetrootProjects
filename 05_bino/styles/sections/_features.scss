@@ -74,9 +74,10 @@
                     border-color: $red;
                     color: $red;
                     transform-origin: 50% 50%;
-
+                    
                     .icon-wrapper {
                         transform-origin: 50% 50%;
+                        transform: translate(-50%, 50%);
                         // transform-origin: 90% 125%;
                         -webkit-transform: rotate(-45deg);
                         -moz-transform: rotate(-45deg);

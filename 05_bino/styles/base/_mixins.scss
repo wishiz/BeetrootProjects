@@ -4,13 +4,6 @@
 	overflow: hidden;
 }
 
-@mixin center-icon {
-	position: absolute;
-    bottom: 30%;
-    left: 37%;
-    transform: translate(-30%, 37%);
-}
-
 @mixin center {
 	justify-content: center;
 	align-items: center;
