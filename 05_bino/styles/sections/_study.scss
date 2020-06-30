@@ -34,8 +34,9 @@
                 position: relative;
                 margin: 0 auto 58px;
 
-                & > svg {
-                    @include center-icon;
+                .icon-wrapper {
+                    transform-origin: 50% 50%;
+                    transform: translate(-50%, 50%);
                     -webkit-transform: rotate(-45deg);
                     -moz-transform: rotate(-45deg);
                     -o-transform: rotate(-45deg);

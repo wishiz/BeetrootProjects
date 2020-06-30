@@ -513,6 +513,7 @@ textarea {
 }
 .features__list-item:hover .features__list-item-icon .icon-wrapper {
   transform-origin: 50% 50%;
+  transform: translate(-50%, 50%);
   transform: rotate(-45deg);
 }
 .features__list-title {
@@ -750,11 +751,9 @@ textarea {
   position: relative;
   margin: 0 auto 58px;
 }
-.study__slider .slider__slide-icon > svg {
-  position: absolute;
-  bottom: 30%;
-  left: 37%;
-  transform: translate(-30%, 37%);
+.study__slider .slider__slide-icon .icon-wrapper {
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 50%);
   transform: rotate(-45deg);
 }
 .study__slider .slider__slide-title {
@@ -911,6 +910,7 @@ textarea {
   background-color: #E74C3C;
   display: inline-block;
 }
+
 .button {
   justify-content: center;
   align-items: center;
