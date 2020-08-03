@@ -1,0 +1,41 @@
+@import "../../../../styles/colors.scss";
+
+.reviews-slide {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $blue-2;
+  color: $white;
+  position: relative;
+  padding: 100px 32px 24px 32px;
+  margin-top: 75px;
+
+  &__img-wrapper {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: -75px;
+    right: 50%;
+    transform: translate(50%);
+
+    img {
+      width: 100%;
+      margin-top: -20px;
+    }
+  }
+
+  &__review {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}

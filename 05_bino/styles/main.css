@@ -513,8 +513,11 @@ textarea {
 }
 .features__list-item:hover .features__list-item-icon .icon-wrapper {
   transform-origin: 50% 50%;
-  transform: translate(-50%, 50%);
-  transform: rotate(-45deg);
+  transform: translate(-50%, 50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+  -moz-transform: translate(-50%, 50%) rotate(-45deg);
+  -o-transform: translate(-50%, 50%) rotate(-45deg);
+  -ms-transform: translate(-50%, 50%) rotate(-45deg);
 }
 .features__list-title {
   text-transform: uppercase;

@@ -77,13 +77,12 @@
                     
                     .icon-wrapper {
                         transform-origin: 50% 50%;
-                        transform: translate(-50%, 50%);
+                        transform: translate(-50%, 50%) rotate(-45deg);
                         // transform-origin: 90% 125%;
-                        -webkit-transform: rotate(-45deg);
-                        -moz-transform: rotate(-45deg);
-                        -o-transform: rotate(-45deg);
-                        -ms-transform: rotate(-45deg);
-                        transform: rotate(-45deg);
+                        -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+                        -moz-transform: translate(-50%, 50%) rotate(-45deg);
+                        -o-transform: translate(-50%, 50%) rotate(-45deg);
+                        -ms-transform: translate(-50%, 50%) rotate(-45deg);
                     }
                 }
             }

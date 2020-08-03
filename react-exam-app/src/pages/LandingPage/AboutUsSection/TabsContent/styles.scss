@@ -1,0 +1,39 @@
+@import "./../../../../styles/colors.scss";
+@import "./../../../../styles/configs.scss";
+
+.tabs-content {
+  display: flex;
+
+  &__desc {
+    width: 100%;
+    text-transform: uppercase;
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__icon {
+    justify-content: flex-start !important;
+    margin-bottom: 8px;
+    opacity: 0.6;
+  }
+
+  &__title {
+    color: $grey-3;
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 2em;
+    font-weight: 300;
+
+    & > p {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-down-xs) {
+    flex-direction: column;
+  }
+}
