@@ -1,9 +1,30 @@
 @import "./../../../../styles/colors.scss";
 @import "./../../../../styles/configs.scss";
 
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInIcon {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
 .tabs-content {
   display: flex;
   min-height: 250px;
+  animation-name: fadeIn;
+  animation-duration: 700ms;
+  animation-timing-function: linear;
 
   &__desc {
     max-width: 250px;
@@ -16,6 +37,9 @@
     justify-content: flex-start !important;
     margin-bottom: 8px;
     opacity: 0.6;
+    animation-name: fadeInIcon;
+    animation-duration: 700ms;
+    animation-timing-function: linear;
   }
 
   &__title {
