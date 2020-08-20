@@ -1,0 +1,103 @@
+@import '../../../styles/configs.scss';
+@import '../../../styles/colors.scss';
+
+.header,
+.header-on-scroll {
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+  z-index: 10000;
+
+  &__content {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .navbar {
+      @media screen and (max-width: $breakpoint-up-sm) {
+        display: none;
+      }
+    }
+
+    .hamburger-btn {
+      display: none;
+
+      @media screen and (max-width: $breakpoint-up-sm) {
+        display: block;
+      }
+    }
+  }
+  &__icon-wrapper {
+    max-width: 200px;
+
+    .header__alt-icon {
+      display: none;
+    }
+  }
+}
+
+.header-on-scroll {
+  background-color: $white;
+
+  &__content {
+    height: 70px;
+
+    .navbar__item {
+      color: $black;
+    }
+  }
+  &__icon-wrapper {
+    max-width: 70px;
+
+    .header__icon {
+      display: none;
+    }
+
+    .header__alt-icon {
+      display: block;
+    }
+  }
+}
+
+// .header-on-scroll {
+//   top: 0;
+//   position: fixed;
+//   left: 0;
+//   width: 100%;
+//   background-color: red;
+
+//   &__content {
+//     height: 140px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 100%;
+//     .navbar {
+//       @media screen and (max-width: $breakpoint-up-sm) {
+//         display: none;
+//       }
+//     }
+
+//     .hamburger-btn {
+//       display: none;
+
+//       @media screen and (max-width: $breakpoint-up-sm) {
+//         display: block;
+//       }
+//     }
+
+//     &__icon-wrapper {
+//       max-width: 200px;
+//       height: 80px;
+
+//       img {
+//         width: 100vw;
+//         height: 100%;
+//       }
+//     }
+//   }
+// }
