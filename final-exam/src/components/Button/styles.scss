@@ -1,0 +1,28 @@
+@import '../../styles/configs.scss';
+@import '../../styles/colors.scss';
+
+.button {
+  &--size-sm {
+    height: 32px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
+
+  &--size-lg {
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+  }
+
+  &--style-rounded {
+    border-radius: 30px;
+  }
+
+  &--color-white {
+    background-color: $white;
+  }
+
+  &--color-beige {
+    background-color: $beige;
+  }
+}

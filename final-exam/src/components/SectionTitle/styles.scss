@@ -1,0 +1,33 @@
+@import '../../styles/colors.scss';
+@import '../../styles/configs.scss';
+
+.section-title {
+  text-align: center;
+  &__heading {
+    font-family: 'Prata';
+    font-size: 3rem;
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.125rem;
+    color: $grey-1;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      font-size: 1rem;
+    }
+  }
+
+  &__divider {
+    max-width: 80px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
