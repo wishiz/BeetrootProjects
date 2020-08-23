@@ -1,27 +1,30 @@
-import React from "react";
+import React from 'react';
+
+// Modules
+import types from 'prop-types';
 
 // Components
-import { ContentLimiter } from "./../../../components/ContentLimiter";
-import { SectionTitle } from "./../../../components/SectionTitle";
-import { ReviewsSlider } from "./ReviewsSlider";
+import ContentLimiter from '../../../components/ContentLimiter';
+import SectionTitle from '../../../components/SectionTitle';
+import ReviewsSlider from './ReviewsSlider';
+
+// Constants
+import titles from '../../../constants/SECTION_TITLE_DATA';
 
 // Styles
-import "./styles.scss";
+import './styles.scss';
 
 // ----------------
 
-export const ReviewsSection = () => {
-  const reviewsSectionTitle = {
-    heading: "Happy clients",
-    capture: "Some kind words from our clients",
-    color: "white",
-  };
-
+export default function ReviewsSection({ sectionName }) {
+  const reviewsSectionTitle = titles.find(
+    (title) => title.section === sectionName,
+  );
   return (
     <section className="reviews">
       <ContentLimiter>
         <SectionTitle
-          heading="Happy clients"
+          heading={reviewsSectionTitle.heading}
           capture={reviewsSectionTitle.capture}
           color={reviewsSectionTitle.color}
         />
@@ -30,4 +33,8 @@ export const ReviewsSection = () => {
       </ContentLimiter>
     </section>
   );
+}
+
+ReviewsSection.propTypes = {
+  sectionName: types.string,
 };

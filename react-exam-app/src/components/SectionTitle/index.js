@@ -1,19 +1,17 @@
-import React from "react";
+import React from 'react';
 
 // Modules
-import classNames from "classnames";
-import types from "prop-types";
+import classNames from 'classnames';
+import types from 'prop-types';
 
 // Styles
-import "./styles.scss";
+import './styles.scss';
 
-export const SectionTitle = (props) => {
-  const { heading, capture, color } = props;
-
+export default function SectionTitle({ heading, capture, color }) {
   const sectionTitleClass = classNames({
-    "section-title": true,
-    "section-title--white": color === "white",
-    "section-title--grey": color === "grey",
+    'section-title': true,
+    'section-title--white': color === 'white',
+    'section-title--grey': color === 'grey',
   });
 
   return (
@@ -22,15 +20,17 @@ export const SectionTitle = (props) => {
       <h2 className="section-title__capture">{capture}</h2>
     </div>
   );
-};
+}
 
 // Type of props
 SectionTitle.propTypes = {
   heading: types.string,
   capture: types.string,
-  color: types.string,
+  color: types.oneOf(['white', 'grey']),
 };
 
-// Name.defaultProps = {
-//   example: true,
-// };
+SectionTitle.defaultProps = {
+  heading: 'Section header',
+  capture: 'Section description',
+  color: 'white',
+};

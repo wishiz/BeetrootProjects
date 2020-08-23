@@ -1,14 +1,17 @@
-import React from "react";
+import React from 'react';
+
+// Modules
+import types from 'prop-types';
 
 // Constants
-import { reviews } from "../constants";
+import reviews from '../../../../constants/REVIEWS_DATA';
 
 // Styles
-import "./styles.scss";
+import './styles.scss';
 
 // ----------------
 
-export const ReviewsSliderSlide = ({ slide }) => {
+export default function ReviewsSliderSlide({ slide }) {
   const reviewSlide = reviews.find((card) => slide === card.flag);
 
   return (
@@ -20,4 +23,12 @@ export const ReviewsSliderSlide = ({ slide }) => {
       <h3 className="reviews-slide__name">{reviewSlide.name}</h3>
     </div>
   );
+}
+
+ReviewsSliderSlide.propTypes = {
+  slide: types.string,
+};
+
+ReviewsSliderSlide.defaultProps = {
+  slide: 'firstReview',
 };

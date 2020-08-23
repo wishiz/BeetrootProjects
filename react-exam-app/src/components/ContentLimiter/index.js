@@ -1,15 +1,29 @@
-import React from "react";
+import React from 'react';
 
-import classnames from "classnames";
+// Modules
+import types from 'prop-types';
+import classnames from 'classnames';
 
 // Styles
-import "./styles.scss";
+import './styles.scss';
 
-export const ContentLimiter = (props) => {
+// ----------------
+
+export default function ContentLimiter({ fullWidth, children }) {
   const contentLimiterClass = classnames({
-    "content-limiter": true,
-    "content-limiter--full-width": props.fullWidth,
+    'content-limiter': true,
+    'content-limiter--full-width': fullWidth,
   });
 
-  return <div className={contentLimiterClass}>{props.children}</div>;
+  return <div className={contentLimiterClass}>{children}</div>;
+}
+
+// Type of props
+ContentLimiter.propTypes = {
+  fullWidth: types.bool,
+  children: types.node.isRequired,
+};
+
+ContentLimiter.defaultProps = {
+  fullWidth: false,
 };

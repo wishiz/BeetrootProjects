@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 
 // Modules
-import classNames from "classnames";
-import types from "prop-types";
+import classNames from 'classnames';
+import types from 'prop-types';
 
 // Styles
-import "./styles.scss";
+import './styles.scss';
 
-export const Name = (props) => {
-  const { example } = props;
+// ----------------
 
+export default function Name({ example }) {
   const nameClass = classNames({
     nameClass: true,
-    "nameClass--example": example,
+    'nameClass--example': example,
   });
 
   return <div className={nameClass}>Hello!</div>;
-};
+}
 
 // Type of props
 Name.propTypes = {

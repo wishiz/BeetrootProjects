@@ -1,19 +1,16 @@
-import React from "react";
+import React from 'react';
 
 // Components
-import { AboutUsSection } from "../../pages/LandingPage/AboutUsSection";
-import { ReviewsSection } from "../../pages/LandingPage/ReviewsSection";
-// import { HomeSection } from "../../pages/LandingPage/HomeSection";
+import AboutUsSection from './AboutUsSection';
+import ReviewsSection from './ReviewsSection';
 // ----------------
 
-export const LandingPage = () => {
+export default function LandingPage() {
   return (
     <div>
-      {/* <HomeSection /> */}
+      <AboutUsSection sectionName="about-us" />
 
-      <AboutUsSection />
-
-      <ReviewsSection />
+      <ReviewsSection sectionName="reviews" />
     </div>
   );
-};
+}
