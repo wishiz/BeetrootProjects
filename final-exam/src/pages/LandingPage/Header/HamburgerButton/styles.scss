@@ -2,9 +2,10 @@
 @import '../../../../styles/colors.scss';
 
 .hamburger-btn {
+  margin-top: 4px;
   position: relative;
-  width: 1.5rem;
-  height: 2.5rem;
+  width: 24px;
+  height: 24px;
   border: none;
   display: block;
   background-color: transparent;
@@ -20,7 +21,7 @@
     display: block;
     opacity: 1;
     transform: rotate(0);
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 
     &:nth-of-type(1) {
       top: 0;

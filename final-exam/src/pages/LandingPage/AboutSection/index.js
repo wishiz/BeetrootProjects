@@ -10,7 +10,7 @@ import './styles.scss';
 
 export default function AboutSection() {
   return (
-    <section className="about">
+    <section className="about" id="restaurant">
       <ContentWidthLimiter className="about__container">
         <SectionTitle
           heading={aboutTitleData.title}

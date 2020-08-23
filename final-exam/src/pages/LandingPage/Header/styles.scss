@@ -48,6 +48,18 @@
 
     .navbar__item {
       color: $black;
+      border-bottom: 1px transparent solid;
+
+      &:hover {
+        border-bottom: 1px $black solid;
+        color: $black !important;
+      }
+    }
+
+    .hamburger-btn {
+      p {
+        background-color: $black;
+      }
     }
   }
   &__icon-wrapper {
