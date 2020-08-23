@@ -1,20 +1,16 @@
 import React from 'react';
 
+// Modules
+import types from 'prop-types';
+import ReactIcon from '../../../../components/ReactIcon';
+
 // Styles
 import './styles.scss';
-
-// Modules
-import { ReactIcon } from '../../../../components/ReactIcon';
-
-// Constants
-import { contents } from './constants';
 // ----------------
 
-export const TabsContent = ({ activeTabName }) => {
-  const contentToDisplay = contents.find((tab) => tab.name === activeTabName);
-
+export default function TabContent({ contentToDisplay }) {
   return (
-    <div className="tabs-content" key={contentToDisplay.name}>
+    <div className="tabs-content" key={contentToDisplay.id}>
       <div className="tabs-content__desc">
         <ReactIcon className="tabs-content__icon" size="xxl" color="orange">
           {contentToDisplay.icon()}
@@ -27,4 +23,8 @@ export const TabsContent = ({ activeTabName }) => {
       </div>
     </div>
   );
+}
+
+TabContent.propTypes = {
+  activeTabName: types.string,
 };
