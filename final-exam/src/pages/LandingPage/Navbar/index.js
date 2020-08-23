@@ -30,5 +30,5 @@ export default function Navbar({ navbarItems }) {
 }
 
 Navbar.propTypes = {
-  navbarItems: types.array,
+  navbarItems: types.arrayOf(types.object),
 };

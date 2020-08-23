@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 
+import AboutSliderSlide from '../AboutSliderSlide';
+
 import './styles.scss';
 
 export default function AboutSlider() {
@@ -15,20 +17,20 @@ export default function AboutSlider() {
   return (
     <div className="about-slider">
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
+        <div className="about-slider__slide">
+          <AboutSliderSlide slide="cheersSlide" />
         </div>
-        <div>
-          <h3>2</h3>
+        <div className="about-slider__slide">
+          <AboutSliderSlide slide="restaurantSlide" />
         </div>
-        <div>
-          <h3>3</h3>
+        <div className="about-slider__slide">
+          <AboutSliderSlide slide="serveSlide" />
         </div>
-        <div>
-          <h3>4</h3>
+        <div className="about-slider__slide">
+          <AboutSliderSlide slide="steakSlide" />
         </div>
-        <div>
-          <h3>5</h3>
+        <div className="about-slider__slide">
+          <AboutSliderSlide slide="wineSlide" />
         </div>
       </Slider>
     </div>
