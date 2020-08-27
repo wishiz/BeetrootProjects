@@ -6,7 +6,7 @@ import ReactIcon from '../../../components/ReactIcon';
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 import Button from '../../../components/Button';
 
-import homeSectionData from '../../../constants/homeSectionData';
+import homeData from '../../../constants/homeSectionData';
 
 import './styles.scss';
 
@@ -15,8 +15,8 @@ export default function HomeSection() {
     <section className="home" id="home">
       <ContentWidthLimiter width="sm" className="home__content-limiter">
         <div className="home__text-wrapper">
-          <p className="home__capture">{homeSectionData.capture}</p>
-          <h1 className="home__title">{homeSectionData.title}</h1>
+          <p className="home__capture">{homeData.capture}</p>
+          <h1 className="home__title">{homeData.title}</h1>
           <Button
             className="home__button"
             type="submit"
@@ -24,7 +24,7 @@ export default function HomeSection() {
             appearance="rounded"
             color="white"
           >
-            {homeSectionData.buttonText}
+            {homeData.buttonText}
             <ReactIcon size="md" className="home__button-icon">
               <FaAngleRight />
             </ReactIcon>

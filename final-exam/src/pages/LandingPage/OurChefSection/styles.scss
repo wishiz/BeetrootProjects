@@ -1,0 +1,41 @@
+@import '../../../styles/colors.scss';
+
+.our-chef {
+  background-image: url('../../../assets/images/chef_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $black;
+
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 600px;
+  }
+
+  &__title {
+    text-align: left !important;
+
+    .section-title__desc {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+    }
+  }
+
+  &__text-block {
+    color: $grey-1;
+    line-height: 1.7;
+    max-width: 470px;
+
+    p {
+      margin-bottom: 24px;
+      // font-weight: 700;
+      color: $white;
+    }
+  }
+
+  &__signature-wrapper {
+    max-width: 150px;
+  }
+}

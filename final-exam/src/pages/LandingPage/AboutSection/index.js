@@ -13,8 +13,9 @@ export default function AboutSection() {
     <section className="about" id="restaurant">
       <ContentWidthLimiter className="about__container">
         <SectionTitle
-          heading={aboutTitleData.title}
-          desc={aboutTitleData.capture}
+          className="about__title"
+          heading={aboutTitleData.heading}
+          desc={aboutTitleData.desc}
         />
         <AboutSlider />
       </ContentWidthLimiter>

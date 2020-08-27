@@ -1,6 +1,11 @@
 .about {
   &__container {
-    min-height: 720px;
+    min-height: 340px;
     padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    text-align: center;
   }
 }

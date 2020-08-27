@@ -1,19 +1,29 @@
 import React from 'react';
 
-import types from 'prop-types';
+import types, { oneOf } from 'prop-types';
+import classNames from 'classnames';
 
 import titleDivider from '../../assets/icons/titleDivider.png';
 
 import './styles.scss';
 
-export default function SectionTitle({ heading, desc, icon }) {
-  // const exampleClass = classNames({
-  //   exampleClass: true,
-  //   'exampleClass--modificator': example,
-  // });
+export default function SectionTitle({
+  heading,
+  desc,
+  icon,
+  color,
+  className,
+}) {
+  const SectionTitleClass = classNames(
+    {
+      'section-title': true,
+      [`section-title--${color}`]: color,
+    },
+    className,
+  );
 
   return (
-    <div className="section-title">
+    <div className={SectionTitleClass}>
       <h2 className="section-title__heading">{heading}</h2>
       <p className="section-title__desc">{desc}</p>
       <Divider icon={icon} />
@@ -36,6 +46,11 @@ SectionTitle.propTypes = {
   heading: types.string,
   desc: types.string,
   icon: types.bool,
+  color: oneOf(['light', 'dark']),
+};
+
+SectionTitle.defaultTypes = {
+  color: 'dark',
 };
 
 Divider.propTypes = {
