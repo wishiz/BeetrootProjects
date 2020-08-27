@@ -2,7 +2,6 @@
 @import '../../styles/configs.scss';
 
 .section-title {
-  text-align: center;
   &__heading {
     font-family: 'Prata';
     font-size: 3rem;
@@ -24,10 +23,14 @@
 
   &__divider {
     max-width: 80px;
-    margin: 0 auto;
+    margin-bottom: 32px !important;
 
     img {
       width: 100%;
     }
+  }
+
+  &--light .section-title__heading {
+    color: $white;
   }
 }

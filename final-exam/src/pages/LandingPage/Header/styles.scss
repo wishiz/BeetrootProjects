@@ -34,6 +34,10 @@
   &__icon-wrapper {
     max-width: 200px;
 
+    @media screen and (max-width: $breakpoint-up-sm) {
+      max-width: 120px;
+    }
+
     .header__alt-icon {
       display: none;
     }

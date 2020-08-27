@@ -1,0 +1,44 @@
+@import '../../styles/configs.scss';
+@import '../../styles/colors.scss';
+
+.tabs {
+  &__header {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 48px;
+    border-bottom: $grey-3 solid 1px;
+    margin-bottom: 32px;
+  }
+
+  &__header-link {
+    cursor: pointer;
+    color: $grey-1;
+    font-family: 'Prata';
+    font-size: 1.125rem;
+    position: relative;
+    height: 48px;
+    padding: 0 16px;
+    transition: 0.5s ease all;
+
+    &:before {
+      content: '';
+      display: none;
+      position: absolute;
+      height: 1px;
+      background-color: $grey-2;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
+
+    &--active {
+      color: $grey-2;
+
+      &:before {
+        display: block;
+      }
+    }
+  }
+}

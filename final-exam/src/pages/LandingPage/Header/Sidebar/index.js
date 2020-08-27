@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
+import { Link } from 'react-scroll';
 import classNames from 'classnames';
 import types from 'prop-types';
 
@@ -13,17 +14,22 @@ export default function Sidebar({ isOpen, list }) {
 
   return (
     <aside className={sidebarClass}>
-      <div className="sidebar__list">
-        {list.map((item, index) => (
-          <a
+      {list.map((item) => (
+        <Fragment key={item.to}>
+          <Link
+            activeClass="sidebar__list-item--active"
             className="sidebar__list-item"
-            href={`#${item.to}`}
-            key={`item${item.id}`}
+            isDynamic
+            duration={500}
+            smooth
+            offset={-60}
+            spy
+            to={item.to}
           >
-            {item.name}
-          </a>
-        ))}
-      </div>
+            <p>{item.name}</p>
+          </Link>
+        </Fragment>
+      ))}
     </aside>
   );
 }
