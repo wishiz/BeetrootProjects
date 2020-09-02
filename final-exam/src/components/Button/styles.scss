@@ -2,6 +2,8 @@
 @import '../../styles/colors.scss';
 
 .button {
+  transition: background-color 0.5s ease, color 0.5s ease;
+
   &--size-sm {
     height: 32px;
     padding: 0 30px;
@@ -24,5 +26,15 @@
 
   &--color-beige {
     background-color: $beige;
+  }
+
+  &--color-transparent {
+    background-color: transparent;
+    border: 1px solid $black;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
   }
 }

@@ -57,7 +57,7 @@
     }
   }
 
-  &__button {
+  &__reserve-button {
     animation: 1s ease-in show;
     display: flex;
     align-items: center;
@@ -69,15 +69,14 @@
     height: 32px;
     padding: 0 30px;
     border-radius: 40px;
-    transition: all 0.5s ease;
 
-    &-icon {
-      transition: all 0.5s ease;
-      margin-left: 16px;
-    }
-
-    &:hover .home__button-icon {
+    &:hover .home__reserve-button-icon {
       transform: translateX(16px);
     }
+  }
+
+  &__reserve-button-icon {
+    transition: transform 0.5s ease;
+    margin-left: 16px;
   }
 }

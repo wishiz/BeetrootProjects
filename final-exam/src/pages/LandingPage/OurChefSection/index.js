@@ -1,5 +1,8 @@
 import React from 'react';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 import SectionTitle from '../../../components/SectionTitle';
 
@@ -12,8 +15,9 @@ import chefSignature from '../../../assets/images/chef_signature.png';
 import './styles.scss';
 
 export default function OurChefSection() {
+  AOS.init();
   return (
-    <section className="our-chef" id="our-chef">
+    <section className="our-chef" id="our-chef" data-aos="fade-up">
       <ContentWidthLimiter className="our-chef__container">
         <SectionTitle
           className="our-chef__title"

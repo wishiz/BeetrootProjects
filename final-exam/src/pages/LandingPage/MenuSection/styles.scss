@@ -1,11 +1,12 @@
 .menu {
   background-image: url('../../../assets/images/menu_bg.png');
   background-repeat: repeat;
+  overflow-x: hidden;
 
   &__container {
     min-height: 900px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   &__title {
@@ -16,5 +17,9 @@
     .section-title__divider {
       margin: 0 auto;
     }
+  }
+
+  &__reserve-button {
+    margin: 0 auto;
   }
 }

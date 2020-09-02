@@ -27,6 +27,7 @@ export default function Tabs({ tabsLinks, tabsContent }) {
           <div
             className={tabsLinksClass(link.name)}
             onClick={() => handleTabSet(link.name)}
+            key={link.name}
           >
             <p>{link.title}</p>
             <div>{link.icon}</div>

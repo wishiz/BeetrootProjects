@@ -32,8 +32,9 @@ export default function Button({
 
 Button.propTypes = {
   size: types.oneOf(['sm', 'lg']),
-  color: types.oneOf(['white', 'beige']),
+  color: types.oneOf(['white', 'beige', 'transparent']),
   appearance: types.string,
   onClick: types.func,
   children: types.node,
+  className: types.string,
 };
