@@ -78,7 +78,7 @@ export const lunchSteak = [
   {
     name: 'T-Bone Steak',
     price: '22€',
-    desc: 'Keeping the original recipe from Argentina beef.',
+    desc: 'Original recipe from Argentina beef.',
   },
   {
     name: 'Kalium Steak',
@@ -106,7 +106,7 @@ export const lunchFish = [
   {
     name: 'Fourchu Lobster',
     price: '24€',
-    desc: 'Special fish dish, grilled and boiled.',
+    desc: 'A special fish dish that you will love, grilled and boiled.',
   },
 ];
 
@@ -194,8 +194,7 @@ export const dessertsSweets = [
   {
     name: 'Mango Sorbet',
     price: '3.5€',
-    desc:
-      'Dessert consisting of frozen mango juice or flavored water and sugar.',
+    desc: 'Dessert of frozen mango juice or flavored water and sugar.',
   },
 ];
 
@@ -213,7 +212,7 @@ export const dessertsCakes = [
   {
     name: 'Cheesecake',
     price: '5€',
-    desc: 'Sweet dessert consisting cream cheese, eggs and sugar with berries.',
+    desc: 'Sweet dessert consisting cream cheese, eggs and berries.',
   },
 ];
 
