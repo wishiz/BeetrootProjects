@@ -41,17 +41,17 @@
 
 .dish {
   display: grid;
-  grid-template-columns: 2fr auto;
-  grid-template:
-    'd e' auto
-    'f f' auto
-    'g g' auto;
+  grid-template-columns: 1.5fr 0.5fr;
   grid-gap: 4px;
 
   &__name {
     grid-area: d;
     font-size: 1.25rem;
     font-family: 'Prata';
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      font-size: 1rem;
+    }
   }
 
   &__price {

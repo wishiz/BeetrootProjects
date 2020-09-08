@@ -2,12 +2,6 @@
   position: relative;
 }
 
-.content-container {
-  max-width: 1172px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
 .img-cover {
   object-fit: cover;
   max-width: 100%;
@@ -20,14 +14,4 @@
   max-width: 100%;
   display: block;
   height: auto;
-}
-
-.social-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & > * {
-    margin: 0 4px;
-  }
 }
