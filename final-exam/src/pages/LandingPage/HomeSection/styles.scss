@@ -36,7 +36,7 @@
       transform: translateY(-0.15rem);
     }
 
-    @media screen and (max-width: $breakpoint-down-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       font-size: 0.6rem;
       letter-spacing: 3px;
     }
@@ -51,7 +51,7 @@
     margin-bottom: 3rem;
     line-height: 1.3;
 
-    @media screen and (max-width: $breakpoint-down-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       font-size: 2.5rem;
       max-width: 400px;
     }

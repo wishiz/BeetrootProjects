@@ -23,7 +23,7 @@
     padding-bottom: 64px;
     min-height: 340px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     @media screen and (max-width: $breakpoint-up-xs) {
       padding-top: 40px;

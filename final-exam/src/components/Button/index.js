@@ -12,6 +12,7 @@ export default function Button({
   appearance,
   onClick,
   children,
+  type,
 }) {
   const buttonClass = classNames(
     {
@@ -24,17 +25,18 @@ export default function Button({
   );
 
   return (
-    <button className={buttonClass} onClick={onClick}>
+    <button className={buttonClass} onClick={onClick} type={type}>
       {children}
     </button>
   );
 }
 
 Button.propTypes = {
-  size: types.oneOf(['sm', 'lg']),
+  size: types.oneOf(['sm', 'md', 'lg']),
   color: types.oneOf(['white', 'beige', 'transparent']),
   appearance: types.string,
   onClick: types.func,
   children: types.node,
   className: types.string,
+  type: types.string,
 };

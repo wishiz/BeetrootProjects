@@ -2,12 +2,18 @@
 @import '../../styles/colors.scss';
 
 .button {
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
 
   &--size-sm {
     height: 32px;
     padding: 0 30px;
     font-size: 0.75rem;
+  }
+
+  &--size-md {
+    height: 46px;
+    padding: 0 24px;
+    font-size: 1rem;
   }
 
   &--size-lg {
@@ -26,6 +32,13 @@
 
   &--color-beige {
     background-color: $beige;
+    color: $white;
+    border: transparent 1px solid;
+
+    &:hover {
+      color: $black;
+      border: $black 1px solid;
+    }
   }
 
   &--color-transparent {
@@ -33,8 +46,7 @@
     border: 1px solid $black;
 
     &:hover {
-      background-color: $black;
-      color: $white;
+      background-color: $beige;
     }
   }
 }

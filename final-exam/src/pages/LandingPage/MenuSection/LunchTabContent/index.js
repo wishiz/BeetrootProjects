@@ -27,7 +27,7 @@ export default function DessertsTabContent() {
         <div className="lunch__grid-steak">
           <h3 className="dish-type">Steak</h3>
           {lunchSteak.map((item) => (
-            <div className="dish">
+            <div className="dish" key={item.name}>
               <h3 className="dish__name">{item.name}</h3>
               <h3 className="dish__price">{item.price}</h3>
               <div className="dish__divider" />

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -31,7 +32,9 @@ export default function MenuSection() {
           appearance="rounded"
           className="menu__reserve-button"
         >
-          Reserve a table
+          <Link isDynamic duration={500} smooth offset={-60} spy to="reserve">
+            Reserve a table
+          </Link>
         </Button>
       </ContentWidthLimiter>
     </section>
