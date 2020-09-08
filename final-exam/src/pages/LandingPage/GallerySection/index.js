@@ -19,7 +19,7 @@ export default function GallerySection() {
           {galleryPics.map((pic) => (
             <div
               className={`gallery__grid-card${pic.id} gallery__grid-card`}
-              data-aos="fade-right"
+              data-aos="fade-up"
               key={pic.id}
             >
               <img

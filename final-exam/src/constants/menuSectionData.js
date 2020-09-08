@@ -60,17 +60,17 @@ export const lunchChicken = [
   {
     name: 'Mojopicon Chicken',
     price: '9€',
-    desc: 'Served with pasta, pepper sauce and mediterranean olives.',
+    desc: 'Served with pasta, pepper sauce and olives.',
   },
   {
     name: 'Chicken Schnitze',
     price: '11€',
-    desc: 'Breaded and fried chiclen filet, served with mushroom sauce.',
+    desc: 'Breaded and fried chiclen filet with mushroom sauce.',
   },
   {
     name: 'Stroganoff',
     price: '8.5€',
-    desc: 'Served with rice, boiled vegetables and hot chili sauce.',
+    desc: 'Served with rice, boiled vegetables and chili sauce.',
   },
 ];
 
@@ -96,7 +96,7 @@ export const lunchFish = [
   {
     name: 'Grilled Calamari',
     price: '15€',
-    desc: 'Calamari from the shores of Adriatic, served with vegetables.',
+    desc: 'Calamari from the shores of Adriatic.',
   },
   {
     name: 'Sea Bass Grill',
@@ -106,7 +106,7 @@ export const lunchFish = [
   {
     name: 'Fourchu Lobster',
     price: '24€',
-    desc: 'The most special fish dish you can get, grilled and boiled.',
+    desc: 'Special fish dish, grilled and boiled.',
   },
 ];
 
@@ -221,7 +221,7 @@ export const dessertsFruits = [
   {
     name: 'Orange Punch',
     price: '5€',
-    desc: 'Punch made of oranges from Greece with the best old recipe.',
+    desc: 'Made of oranges from Greece with old recipe.',
   },
   {
     name: 'Melon mix',

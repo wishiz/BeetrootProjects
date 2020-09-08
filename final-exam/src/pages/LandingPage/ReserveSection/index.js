@@ -22,7 +22,7 @@ export default function ReserveSection() {
           <GoogleApiWrapper />
         </div>
 
-        <div className="reserve__info-block" data-aos="fade-left">
+        <div className="reserve__info-block" data-aos="fade-up">
           <SectionTitle
             className="reserve__info-block-title"
             heading={reserveSectionTitle.heading}
