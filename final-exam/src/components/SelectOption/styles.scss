@@ -1,0 +1,21 @@
+@import '../../styles/colors.scss';
+
+.select-option {
+  &__option {
+    width: 100%;
+    padding: 8px 24px;
+    border: $grey-5 1px solid;
+    padding-top: 10px;
+    color: $grey-1;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $beige;
+    }
+
+    option {
+      height: 24px;
+    }
+  }
+}

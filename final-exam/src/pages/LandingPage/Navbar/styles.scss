@@ -11,7 +11,7 @@
     font-family: 'Prata', serif;
     border-bottom: 1px transparent solid;
     padding-bottom: 5px;
-    transition: 0.3s ease all;
+    transition: 0.3s ease border-bottom, 0.3s ease color;
     color: $white;
 
     &:hover {

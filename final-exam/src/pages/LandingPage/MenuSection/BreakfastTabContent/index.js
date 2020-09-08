@@ -1,7 +1,5 @@
 import React from 'react';
 
-import types from 'prop-types';
-
 import {
   breakfastOmelettes,
   breakfastSandwiches,
@@ -17,7 +15,7 @@ export default function BreakfastTabContent() {
         <div className="breakfast__grid-omelettes">
           <h3 className="dish-type">Omelettes</h3>
           {breakfastOmelettes.map((item) => (
-            <div className="dish">
+            <div className="dish" key={item.name}>
               <h3 className="dish__name">{item.name}</h3>
               <h3 className="dish__price">{item.price}</h3>
               <div className="dish__divider" />
@@ -29,7 +27,7 @@ export default function BreakfastTabContent() {
         <div className="breakfast__grid-sandwiches">
           <h3 className="dish-type">Sandwiches</h3>
           {breakfastSandwiches.map((item) => (
-            <div className="dish">
+            <div className="dish" key={item.name}>
               <h3 className="dish__name">{item.name}</h3>
               <h3 className="dish__price">{item.price}</h3>
               <div className="dish__divider" />
@@ -41,7 +39,7 @@ export default function BreakfastTabContent() {
         <div className="breakfast__grid-soups">
           <h3 className="dish-type">Soups</h3>
           {breakfastSoups.map((item) => (
-            <div className="dish">
+            <div className="dish" key={item.name}>
               <h3 className="dish__name">{item.name}</h3>
               <h3 className="dish__price">{item.price}</h3>
               <div className="dish__divider" />
@@ -55,11 +53,3 @@ export default function BreakfastTabContent() {
     </div>
   );
 }
-
-BreakfastTabContent.propTypes = {
-  example: types.bool,
-};
-
-BreakfastTabContent.defaultProps = {
-  example: true,
-};

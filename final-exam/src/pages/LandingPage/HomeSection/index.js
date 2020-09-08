@@ -18,14 +18,14 @@ export default function HomeSection() {
           <p className="home__capture">{homeData.capture}</p>
           <h1 className="home__title">{homeData.title}</h1>
           <Button
-            className="home__button"
+            className="home__reserve-button"
             type="submit"
             size="sm"
             appearance="rounded"
             color="white"
           >
             {homeData.buttonText}
-            <ReactIcon size="md" className="home__button-icon">
+            <ReactIcon size="md" className="home__reserve-button-icon">
               <FaAngleRight />
             </ReactIcon>
           </Button>

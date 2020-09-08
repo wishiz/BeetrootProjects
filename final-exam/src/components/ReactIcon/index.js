@@ -31,6 +31,7 @@ export default function ReactIcon({
 
 ReactIcon.propTypes = {
   className: types.string,
+  children: types.node.isRequired,
   onClick: types.func,
   color: types.oneOf(['black']),
   size: types.oneOf(['xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl']),

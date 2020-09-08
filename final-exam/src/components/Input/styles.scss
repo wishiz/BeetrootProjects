@@ -1,0 +1,20 @@
+@import '../../styles/colors.scss';
+
+.input {
+  color: $grey-1;
+
+  input {
+    width: 100%;
+    padding: 12px 24px 10px 24px;
+    height: 40px;
+    border: $grey-5 1px solid;
+    color: $grey-1;
+    line-height: 1;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $beige;
+    }
+  }
+}

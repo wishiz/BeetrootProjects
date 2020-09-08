@@ -5,6 +5,9 @@ import HomeSection from './HomeSection';
 import AboutSection from './AboutSection';
 import OurChefSection from './OurChefSection';
 import MenuSection from './MenuSection';
+import GallerySection from './GallerySection';
+import ReserveSection from './ReserveSection';
+import Footer from './Footer';
 
 export default function LandingPage() {
   return (
@@ -14,6 +17,9 @@ export default function LandingPage() {
       <AboutSection />
       <OurChefSection />
       <MenuSection />
+      <GallerySection />
+      <ReserveSection />
+      <Footer />
     </div>
   );
 }

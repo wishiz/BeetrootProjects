@@ -3,13 +3,14 @@ import React from 'react';
 import types, { oneOf } from 'prop-types';
 import classNames from 'classnames';
 
-import titleDivider from '../../assets/icons/titleDivider.png';
+import Divider from './Divider';
 
 import './styles.scss';
 
 export default function SectionTitle({
   heading,
   desc,
+  descUpperCase,
   icon,
   color,
   className,
@@ -22,22 +23,16 @@ export default function SectionTitle({
     className,
   );
 
+  const SectionTitleDescClass = classNames({
+    'section-title__desc': true,
+    'section-title__desc--upper-case': descUpperCase,
+  });
+
   return (
     <div className={SectionTitleClass}>
       <h2 className="section-title__heading">{heading}</h2>
-      <p className="section-title__desc">{desc}</p>
+      <p className={SectionTitleDescClass}>{desc}</p>
       <Divider icon={icon} />
-    </div>
-  );
-}
-
-function Divider({ icon }) {
-  if (!icon) {
-    return null;
-  }
-  return (
-    <div className="section-title__divider">
-      <img src={titleDivider} alt="Title_divider" />
     </div>
   );
 }
@@ -45,8 +40,10 @@ function Divider({ icon }) {
 SectionTitle.propTypes = {
   heading: types.string,
   desc: types.string,
+  descUpperCase: types.bool,
   icon: types.bool,
   color: oneOf(['light', 'dark']),
+  className: types.string,
 };
 
 SectionTitle.defaultTypes = {

@@ -13,10 +13,10 @@ import DinnerTabContent from '../pages/LandingPage/MenuSection/DinnerTabContent'
 import DessertsTabContent from '../pages/LandingPage/MenuSection/DessertsTabContent';
 
 export const tabsLinks = [
-  { name: 'breakfast', title: 'Breakfast', icon: () => <GiCoffeeCup /> },
-  { name: 'lunch', title: 'Lunch', icon: () => <GiKnifeFork /> },
-  { name: 'dinner', title: 'Dinner', icon: () => <GiWineGlass /> },
-  { name: 'desserts', title: 'Desserts', icon: () => <GiCupcake /> },
+  { name: 'breakfast', title: 'Breakfast', icon: <GiCoffeeCup /> },
+  { name: 'lunch', title: 'Lunch', icon: <GiKnifeFork /> },
+  { name: 'dinner', title: 'Dinner', icon: <GiWineGlass /> },
+  { name: 'desserts', title: 'Desserts', icon: <GiCupcake /> },
 ];
 
 export const tabsContent = [
