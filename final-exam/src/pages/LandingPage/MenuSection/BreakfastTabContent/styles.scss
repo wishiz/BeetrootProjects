@@ -54,7 +54,7 @@
 
 .dish {
   display: grid;
-  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-columns: 2fr auto;
   grid-gap: 4px;
 
   &__name {

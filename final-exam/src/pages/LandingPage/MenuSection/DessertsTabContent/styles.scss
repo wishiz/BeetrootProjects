@@ -43,6 +43,7 @@
   display: grid;
   grid-template-columns: 2fr auto;
   grid-gap: 4px;
+  align-items: flex-start;
 
   &__name {
     font-size: 1.25rem;

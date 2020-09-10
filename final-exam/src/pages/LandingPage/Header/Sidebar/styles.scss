@@ -11,7 +11,7 @@
   transition: transform 0.2s ease;
   position: fixed;
   padding: 32px;
-  z-index: 20000;
+  z-index: 6;
 
   @media screen and (max-width: $breakpoint-up-sm) {
     display: block;

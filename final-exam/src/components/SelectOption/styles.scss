@@ -9,6 +9,7 @@
     color: $grey-1;
     font-size: 0.9rem;
     transition: border-color 0.3s ease;
+    cursor: pointer;
 
     &:focus {
       border-color: $beige;

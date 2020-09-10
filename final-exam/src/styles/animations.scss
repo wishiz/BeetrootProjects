@@ -8,15 +8,6 @@
   }
 }
 
-@keyframes slideInFromDown {
-  from {
-    transform: translateY(80px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
 @keyframes zoomIn {
   from {
     transform: scale(0);

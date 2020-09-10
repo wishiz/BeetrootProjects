@@ -16,13 +16,13 @@ export default function ReserveSection() {
   AOS.init();
 
   return (
-    <section className="reserve" id="reserve">
+    <section className="reserve">
       <ContentWidthLimiter fullWidth className="reserve__container">
         <div className="reserve__map-block">
           <GoogleApiWrapper />
         </div>
 
-        <div className="reserve__info-block" data-aos="fade-up">
+        <div className="reserve__info-block" data-aos="fade-up" id="reserve">
           <SectionTitle
             className="reserve__info-block-title"
             heading={reserveSectionTitle.heading}

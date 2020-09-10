@@ -1,36 +1,37 @@
-import React from 'react';
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState } from 'react';
 
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 
 import galleryPics from '../../../constants/gallerySectionData';
 
 import './styles.scss';
+import GalleryImages from './GalleryImages';
+import GalleryModal from './GalleryModal';
 
 export default function GallerySection() {
-  AOS.init();
+  const [imgIndex, setImgIndex] = useState(0);
+  const [isModalOpen, openModal] = useState(false);
+
+  const handleOpenModal = (index) => {
+    openModal(true);
+    setImgIndex(index);
+  };
+
+  const handleCloseModal = () => {
+    openModal(false);
+    setImgIndex(0);
+  };
 
   return (
     <section className="gallery" id="gallery">
       <ContentWidthLimiter className="gallery__container" fullWidth>
-        <div className="gallery__grid-wrapper">
-          {galleryPics.map((pic) => (
-            <div
-              className={`gallery__grid-card${pic.id} gallery__grid-card`}
-              data-aos="fade-up"
-              key={pic.id}
-            >
-              <img
-                src={pic.src}
-                alt={pic.alt}
-                title={pic.title}
-                className="img-cover"
-              />
-            </div>
-          ))}
-        </div>
+        <GalleryImages onClick={handleOpenModal} />
+        <GalleryModal
+          isOpen={isModalOpen}
+          onClick={handleCloseModal}
+          src={galleryPics[imgIndex].src}
+          alt={galleryPics[imgIndex].alt}
+        />
       </ContentWidthLimiter>
     </section>
   );

@@ -26,10 +26,10 @@ nav {
 }
 
 body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   font-family: 'Rubik', Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;

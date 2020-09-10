@@ -72,7 +72,11 @@ export default function Header() {
           </div>
         </ContentWidthLimiter>
       </header>
-      <Sidebar isOpen={isSidebarShow} list={sidebarItems} />
+      <Sidebar
+        isOpen={isSidebarShow}
+        list={sidebarItems}
+        handleClick={toggleHandler}
+      />
     </>
   );
 }

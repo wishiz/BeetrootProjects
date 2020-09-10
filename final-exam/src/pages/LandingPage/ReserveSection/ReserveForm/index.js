@@ -12,7 +12,7 @@ export default function ReserveForm() {
 
   return (
     <>
-      <form>
+      <form className="reserve-form">
         <FieldLabel label="Date" id="date" blockTitle>
           <Input type="date" min={today} defaultValue={today} />
         </FieldLabel>
