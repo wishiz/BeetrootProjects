@@ -6,7 +6,7 @@ import types from 'prop-types';
 
 import './styles.scss';
 
-export default function Sidebar({ isOpen, list }) {
+export default function Sidebar({ isOpen, list, handleClick }) {
   const sidebarClass = classNames({
     sidebar: true,
     'sidebar--open': isOpen,
@@ -25,6 +25,7 @@ export default function Sidebar({ isOpen, list }) {
             offset={-60}
             spy
             to={item.to}
+            onClick={handleClick}
           >
             <p>{item.name}</p>
           </Link>

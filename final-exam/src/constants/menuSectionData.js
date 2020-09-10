@@ -58,7 +58,7 @@ export const breakfastSoups = [
 
 export const lunchChicken = [
   {
-    name: 'Mojopicon Chicken',
+    name: 'Mojo Chicken',
     price: '9€',
     desc: 'Served with pasta, pepper sauce and olives.',
   },

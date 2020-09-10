@@ -3,9 +3,10 @@
 .reserve-form {
   &__button {
     font-family: 'Prata';
+    margin-top: 24px;
 
     @media screen and (max-width: $breakpoint-up-sm) {
-      margin: 0 auto;
+      margin: 24px auto 0 auto;
     }
   }
 }

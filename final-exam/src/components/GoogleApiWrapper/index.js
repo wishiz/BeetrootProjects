@@ -5,7 +5,7 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 import {
   GOOGLE_MAPS_API_KEY,
-  dniproLatLong,
+  maltaLatLong,
   restaurantMarker,
 } from '../../constants/reserveSectionData';
 
@@ -24,7 +24,7 @@ export function GoogleMapContainer({ google }) {
       className="google-map"
       google={google}
       zoom={16}
-      initialCenter={dniproLatLong}
+      initialCenter={maltaLatLong}
     >
       <Marker position={restaurantMarker} title="Our location" />
     </Map>
