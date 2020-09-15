@@ -1,39 +1,93 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import Input from '../../../../components/Input';
 import SelectOption from '../../../../components/SelectOption';
 import Button from '../../../../components/Button';
 import FieldLabel from '../../../../components/FieldLabel';
+import InputDateTime from '../../../../components/InputDateTime';
+import InputPhone from '../../../../components/InputPhone';
+import CalendarDatepicker from '../../../../components/InputDateTime/CalendarDatepicker';
 
 import './styles.scss';
 
 export default function ReserveForm() {
-  const today = new Date().toISOString().split('T')[0];
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [isSelected, setSelected] = useState(false);
+  const [isFocused, setFocused] = useState(false);
 
+  const startDate = new Date();
+
+  const options = [];
+
+  for (let guests = 1; guests <= 10; guests += 1) {
+    guests === 1
+      ? options.push({ value: '1person', label: '1 Person' })
+      : options.push({ value: `${guests}people`, label: `${guests} People` });
+  }
+
+  const customStyles = {
+    menu: (base) => ({
+      ...base,
+      borderRadius: 0,
+    }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isSelected
+        ? '#d09e5b'
+        : state.isFocused
+        ? '#eee'
+        : '#fff',
+      cursor: 'pointer',
+    }),
+    menuList: (base) => ({
+      ...base,
+      padding: 0,
+    }),
+    singleValue: (base) => ({
+      ...base,
+      color: '#777',
+    }),
+  };
   return (
     <>
       <form className="reserve-form">
         <FieldLabel label="Date" id="date" blockTitle>
-          <Input type="date" min={today} defaultValue={today} />
+          <InputDateTime
+            selected={selectedDate}
+            onChange={(date) => setSelectedDate(date)}
+            selectsStart
+            minDate={startDate}
+            calendarContainer={CalendarDatepicker}
+          />
         </FieldLabel>
 
         <FieldLabel label="Time" id="date" blockTitle>
-          <Input type="text" placeholder="Enter time" />
+          <InputDateTime
+            placeholderText="Select time"
+            selected={selectedDate}
+            onChange={(date) => setSelectedDate(date)}
+            showTimeSelect
+            showTimeSelectOnly
+            timeIntervals={30}
+            dateFormat="h:mm aa"
+            calendarContainer={CalendarDatepicker}
+          />
         </FieldLabel>
 
         <FieldLabel label="We are:" id="people">
-          <SelectOption id="people" maxNumOfGuests={10} />
+          <SelectOption
+            id="people"
+            options={options}
+            defaultValue={{ value: '1person', label: '1 Person' }}
+            customStyles={customStyles}
+            isSelected={isSelected}
+            isFocused={isFocused}
+            onChange={(option) => setSelected(option)}
+            onFocus={(option) => setFocused(option)}
+          />
         </FieldLabel>
 
         <FieldLabel label="Contact number">
-          <Input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+380123456789"
-            maxlength={13}
-            pattern="^[+380][0-9]*"
-          />
+          <InputPhone />
         </FieldLabel>
 
         <Button

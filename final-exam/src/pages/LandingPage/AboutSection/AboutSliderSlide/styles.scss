@@ -1,4 +1,5 @@
-@import '../../../../styles/configs.scss';
+@import '../../../../styles/configs';
+@import '../../../../styles/colors';
 
 .about-slider-slide {
   display: flex;
@@ -13,7 +14,7 @@
   &__img-wrapper {
     width: 50%;
     margin-right: 32px;
-    border: 10px solid #d09e5b;
+    border: 10px solid $beige;
 
     img {
       width: 100%;

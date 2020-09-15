@@ -1,7 +1,5 @@
 import React from 'react';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Link } from 'react-scroll';
 
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
@@ -12,8 +10,6 @@ import { footerText, footerSocials } from '../../../constants/footerData';
 import './styles.scss';
 
 export default function Footer() {
-  AOS.init();
-
   return (
     <footer className="footer" data-aos="fade-up">
       <ContentWidthLimiter className="footer__container">
@@ -43,7 +39,9 @@ export default function Footer() {
               <div className="footer__socials">
                 {footerSocials.map((elem) => (
                   <a href={elem.url} key={elem.id}>
-                    <ReactIcon size="lg">{elem.icon}</ReactIcon>
+                    <ReactIcon size="lg" color="white">
+                      {elem.icon}
+                    </ReactIcon>
                   </a>
                 ))}
               </div>

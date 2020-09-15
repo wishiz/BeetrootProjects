@@ -18,5 +18,9 @@
       border-bottom: 1px $white solid;
       color: $white !important;
     }
+
+    &--active {
+      border-bottom: 1px $black solid;
+    }
   }
 }
