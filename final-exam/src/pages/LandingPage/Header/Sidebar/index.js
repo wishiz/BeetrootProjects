@@ -22,7 +22,7 @@ export default function Sidebar({ isOpen, list, handleClick }) {
             isDynamic
             duration={500}
             smooth
-            offset={-60}
+            offset={-71}
             spy
             to={item.to}
             onClick={handleClick}

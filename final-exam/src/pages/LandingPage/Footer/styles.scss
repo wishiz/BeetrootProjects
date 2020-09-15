@@ -1,5 +1,5 @@
-@import '../../../styles/colors.scss';
-@import '../../../styles/configs.scss';
+@import '../../../styles/colors';
+@import '../../../styles/configs';
 
 .footer {
   background-color: $grey-footer;
@@ -27,7 +27,6 @@
 
     @media screen and (max-width: $breakpoint-up-xs) {
       padding-top: 40px;
-      padding-bottom: 40px;
       flex-direction: column;
     }
   }
@@ -95,7 +94,6 @@
     margin-bottom: 24px;
 
     a {
-      color: $white;
       transition: 0.3s ease transform;
 
       &:hover {

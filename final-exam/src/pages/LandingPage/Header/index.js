@@ -51,7 +51,7 @@ export default function Header() {
         <ContentWidthLimiter width="sm">
           <div className={`${className}__content`}>
             <div className={`${className}__icon-wrapper`}>
-              <Link isDynamic duration={500} smooth offset={-60} spy to="home">
+              <Link isDynamic duration={500} smooth spy to="home">
                 <img
                   className="img-contain header__icon"
                   src={headerIcon}

@@ -29,3 +29,8 @@ ContentWidthLimiter.propTypes = {
   children: types.node.isRequired,
   width: types.oneOf(['sm', 'lg']),
 };
+
+ContentWidthLimiter.defaultProps = {
+  fullWidth: false,
+  width: 'sm',
+};

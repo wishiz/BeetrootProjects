@@ -13,8 +13,8 @@ export const OurChef = styled.section`
 `;
 
 export const OurChefContainer = styled(ContentWidthLimiter)`
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   min-height: 600px;
 `;
 

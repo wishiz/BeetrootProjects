@@ -1,8 +1,5 @@
 import React from 'react';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 import SectionTitle from '../../../components/SectionTitle';
 
 import {
@@ -11,10 +8,10 @@ import {
 } from '../../../constants/ourChefSectionData';
 import chefSignature from '../../../assets/images/chef_signature.png';
 
+// Used Styled Components (SC) for training purposes in this section
 import * as SC from './styles';
 
 export default function OurChefSection() {
-  AOS.init();
   return (
     <SC.OurChef id="our-chef" data-aos="fade-up">
       <SC.OurChefContainer className="our-chef__container">

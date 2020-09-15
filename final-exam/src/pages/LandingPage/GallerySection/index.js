@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
+import GalleryImages from './GalleryImages';
+import GalleryModal from './GalleryModal';
 
 import galleryPics from '../../../constants/gallerySectionData';
 
 import './styles.scss';
-import GalleryImages from './GalleryImages';
-import GalleryModal from './GalleryModal';
 
 export default function GallerySection() {
   const [imgIndex, setImgIndex] = useState(0);

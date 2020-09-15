@@ -1,5 +1,5 @@
-@import '../../styles/colors.scss';
-@import '../../styles/configs.scss';
+@import '../../styles/colors';
+@import '../../styles/configs';
 
 .section-title {
   &__heading {
@@ -36,11 +36,13 @@
     }
   }
 
-  &--light .section-title__heading {
-    color: $white;
-  }
+  &--light {
+    .section-title__heading {
+      color: $white;
+    }
 
-  &--light .section-title__desc {
-    color: $white;
+    .section-title__desc {
+      color: $white;
+    }
   }
 }

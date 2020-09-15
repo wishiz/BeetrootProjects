@@ -1,15 +1,10 @@
 import React from 'react';
 
 import types from 'prop-types';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 import galleryPics from '../../../../constants/gallerySectionData';
 
-import './styles.scss';
-
 export default function GalleryImages({ onClick }) {
-  AOS.init();
   return (
     <div className="gallery__grid-wrapper">
       {galleryPics.map((pic, index) => (

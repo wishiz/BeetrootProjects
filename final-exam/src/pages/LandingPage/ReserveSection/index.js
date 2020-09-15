@@ -1,8 +1,5 @@
 import React from 'react';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 import GoogleApiWrapper from '../../../components/GoogleApiWrapper';
 import SectionTitle from '../../../components/SectionTitle';
@@ -13,8 +10,6 @@ import { reserveSectionTitle } from '../../../constants/reserveSectionData';
 import './styles.scss';
 
 export default function ReserveSection() {
-  AOS.init();
-
   return (
     <section className="reserve">
       <ContentWidthLimiter fullWidth className="reserve__container">

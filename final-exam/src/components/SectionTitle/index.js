@@ -15,7 +15,7 @@ export default function SectionTitle({
   color,
   className,
 }) {
-  const SectionTitleClass = classNames(
+  const sectionTitleClass = classNames(
     {
       'section-title': true,
       [`section-title--${color}`]: color,
@@ -23,22 +23,22 @@ export default function SectionTitle({
     className,
   );
 
-  const SectionTitleDescClass = classNames({
+  const sectionTitleDescClass = classNames({
     'section-title__desc': true,
     'section-title__desc--upper-case': descUpperCase,
   });
 
   return (
-    <div className={SectionTitleClass}>
+    <div className={sectionTitleClass}>
       <h2 className="section-title__heading">{heading}</h2>
-      <p className={SectionTitleDescClass}>{desc}</p>
+      <p className={sectionTitleDescClass}>{desc}</p>
       <Divider icon={icon} />
     </div>
   );
 }
 
 SectionTitle.propTypes = {
-  heading: types.string,
+  heading: types.string.isRequired,
   desc: types.string,
   descUpperCase: types.bool,
   icon: types.bool,
@@ -48,8 +48,4 @@ SectionTitle.propTypes = {
 
 SectionTitle.defaultTypes = {
   color: 'dark',
-};
-
-Divider.propTypes = {
-  icon: types.bool,
 };

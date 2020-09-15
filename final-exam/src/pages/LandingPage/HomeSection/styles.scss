@@ -16,6 +16,12 @@
     @include center;
     color: $white;
     flex-direction: column;
+
+    @media screen and (orientation: landscape) {
+      body {
+        flex-direction: row;
+      }
+    }
   }
 
   &__capture {

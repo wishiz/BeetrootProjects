@@ -1,8 +1,6 @@
 import React from 'react';
 
 import { Link } from 'react-scroll';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 import ContentWidthLimiter from '../../../components/ContentWidthLimiter';
 import SectionTitle from '../../../components/SectionTitle';
@@ -15,7 +13,6 @@ import { menuTitle } from '../../../constants/menuSectionData';
 import './styles.scss';
 
 export default function MenuSection() {
-  AOS.init();
   return (
     <section className="menu" id="menu" data-aos="fade-up">
       <ContentWidthLimiter className="menu__container">

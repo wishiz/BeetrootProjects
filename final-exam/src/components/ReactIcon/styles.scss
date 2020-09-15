@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import '../../styles/colors';
 @import '../../styles/mixins';
 
 .react-icon {
@@ -38,5 +38,9 @@
 
   &--color-black {
     color: $black;
+  }
+
+  &--color-white {
+    color: $white;
   }
 }
