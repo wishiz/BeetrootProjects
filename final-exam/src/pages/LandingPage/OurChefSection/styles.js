@@ -8,7 +8,6 @@ export const OurChef = styled.section`
   background-image: url(${chefBg});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   background-color: #000;
 `;
 

@@ -10,6 +10,7 @@ import HamburgerButton from './HamburgerButton';
 import Sidebar from './Sidebar';
 
 import { navbarItems, sidebarItems } from '../../../constants/headerData';
+
 import headerIcon from '../../../assets/icons/headerIcon.png';
 import headerScrollIcon from '../../../assets/icons/headerScrollIcon.png';
 

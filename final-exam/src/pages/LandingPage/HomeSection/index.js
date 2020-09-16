@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from 'react-scroll';
 import { FaAngleRight } from 'react-icons/fa';
 import ReactIcon from '../../../components/ReactIcon';
 
@@ -24,7 +25,16 @@ export default function HomeSection() {
             appearance="rounded"
             color="white"
           >
-            {homeData.buttonText}
+            <Link
+              isDynamic
+              duration={500}
+              smooth
+              offset={-170}
+              spy
+              to="reserve"
+            >
+              Reserve a table
+            </Link>
             <ReactIcon size="md" className="home__reserve-button-icon">
               <FaAngleRight />
             </ReactIcon>
