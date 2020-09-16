@@ -11,22 +11,18 @@ export default function SelectOption({
   defaultValue,
   customStyles,
   isSelected,
-  isFocused,
   onChange,
-  onFocus,
 }) {
   return (
     <div className="select-option">
       <Select
         isSelected={isSelected}
-        isFocused={isFocused}
         styles={customStyles}
         options={options}
         className="select-option__option"
         maxMenuHeight={maxMenuHeight}
         defaultValue={defaultValue}
         onChange={onChange}
-        onFocus={onFocus}
       />
     </div>
   );
@@ -38,9 +34,7 @@ SelectOption.propTypes = {
   defaultValue: types.objectOf(types.string),
   customStyles: types.objectOf(types.string),
   isSelected: types.bool,
-  isFocused: types.bool,
   onChange: types.func,
-  onFocus: types.func,
 };
 
 SelectOption.defaultProps = {

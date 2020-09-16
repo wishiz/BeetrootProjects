@@ -1,4 +1,5 @@
-@import '../../../styles/colors.scss';
+@import '../../../styles/colors';
+@import '../../../styles/configs';
 
 .react-datepicker {
   animation: show 0.5s ease;
@@ -8,13 +9,13 @@
     border-radius: 0;
     font-size: 0.7rem;
     background-color: $white;
-    border: $grey-1 1px solid;
+    border: $grey-3 1px solid;
+    box-shadow: $box-shadow-form;
   }
 
   &__header {
     background-color: $beige;
     border-radius: 0;
-    border-color: $grey-1;
 
     div {
       color: $white;

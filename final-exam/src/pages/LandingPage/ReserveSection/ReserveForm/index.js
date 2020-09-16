@@ -12,7 +12,6 @@ import './styles.scss';
 export default function ReserveForm() {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [isSelected, setSelected] = useState(false);
-  const [isFocused, setFocused] = useState(false);
 
   const startDate = new Date();
 
@@ -24,18 +23,17 @@ export default function ReserveForm() {
       : options.push({ value: `${guests}people`, label: `${guests} People` });
   }
 
-  const customStyles = {
+  const customSelectStyles = {
     menu: (base) => ({
       ...base,
       borderRadius: 0,
     }),
     option: (base, state) => ({
       ...base,
-      backgroundColor: state.isSelected
-        ? '#d09e5b'
-        : state.isFocused
-        ? '#eee'
-        : '#fff',
+      '&:hover': state.isSelected
+        ? { backgroundColor: '#d09e5b' }
+        : { backgroundColor: '#eee' },
+      backgroundColor: state.isSelected ? '#d09e5b' : '#fff',
       cursor: 'pointer',
     }),
     menuList: (base) => ({
@@ -54,7 +52,6 @@ export default function ReserveForm() {
           <InputDateTime
             selected={selectedDate}
             onChange={(date) => setSelectedDate(date)}
-            selectsStart
             minDate={startDate}
             calendarContainer={CalendarDatepicker}
           />
@@ -78,16 +75,14 @@ export default function ReserveForm() {
             id="people"
             options={options}
             defaultValue={{ value: '1person', label: '1 Person' }}
-            customStyles={customStyles}
+            customStyles={customSelectStyles}
             isSelected={isSelected}
-            isFocused={isFocused}
             onChange={(option) => setSelected(option)}
-            onFocus={(option) => setFocused(option)}
           />
         </FieldLabel>
 
         <FieldLabel label="Contact number">
-          <InputPhone />
+          <InputPhone country="ua" placeholder="+380" />
         </FieldLabel>
 
         <Button

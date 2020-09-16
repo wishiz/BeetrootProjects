@@ -48,4 +48,5 @@ SectionTitle.propTypes = {
 
 SectionTitle.defaultTypes = {
   color: 'dark',
+  icon: false,
 };

@@ -16,7 +16,7 @@ export default function Navbar({ navbarItems }) {
             isDynamic
             duration={500}
             smooth
-            offset={-140}
+            offset={-170}
             spy
             to={item.to}
           >

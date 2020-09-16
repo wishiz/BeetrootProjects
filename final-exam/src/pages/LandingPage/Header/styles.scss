@@ -1,5 +1,5 @@
-@import '../../../styles/configs.scss';
-@import '../../../styles/colors.scss';
+@import '../../../styles/configs';
+@import '../../../styles/colors';
 
 .header,
 .header-on-scroll {
@@ -68,6 +68,7 @@
       }
     }
   }
+
   &__icon-wrapper {
     max-width: 70px;
 
